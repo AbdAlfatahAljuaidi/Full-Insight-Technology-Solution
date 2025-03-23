@@ -1,5 +1,4 @@
 import React from 'react';
-import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import Image from '../../assets/Microsoft_Dynamics365_blog-1170x617.jpg'; // يمكنك استبدالها بالصورة المناسبة
 import Process from '../../assets/epicor_cover.jpeg'; // يمكنك استبدالها بالصورة المناسبة

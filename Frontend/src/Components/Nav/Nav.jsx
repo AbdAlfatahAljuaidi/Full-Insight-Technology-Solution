@@ -119,12 +119,15 @@ const Nav = ({changeLanguage }) => {
                   <ChevronDownIcon className="h-5 w-5" />
                 </DisclosureButton>
                 <DisclosurePanel className="mt-2 space-y-2">
-                  {serviceItems.map((item) => (
-                    <DisclosureButton key={item.name} as="a" href={item.href} className="block py-2 pl-6 text-sm font-semibold text-gray-900 hover:text-hover">
-                      {item.name}
-                    </DisclosureButton>
-                  ))}
-                </DisclosurePanel>
+  {serviceItems.map((item) => (
+    <Link key={item.name} to={`/${item.href}`} className="block">
+      <DisclosureButton as="div" className="block py-2 pl-6 text-sm font-semibold text-gray-900 hover:text-hover">
+        {item.name}
+      </DisclosureButton>
+    </Link>
+  ))}
+</DisclosurePanel>
+
               </Disclosure>
               <Link to={'/successstory'}><a className="block py-2 text-lg font-semibold text-gray-900 hover:text-hover">Successful Story</a></Link>
               <Link to={'/MostQuestions'}><a className="block py-2 text-lg font-semibold text-gray-900 hover:text-hover">Support & Help</a></Link>
