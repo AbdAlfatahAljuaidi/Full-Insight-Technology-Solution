@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
-import Image from '../../assets/Microsoft_Dynamics365_blog-1170x617.jpg'; // يمكنك استبدالها بالصورة المناسبة
-import Process from '../../assets/epicor_cover.jpeg'; // يمكنك استبدالها بالصورة المناسبة
+import Image from '../../assets/Black and Yellow Web Developer LinkedIn Banner.png'; // يمكنك استبدالها بالصورة المناسبة
+import Process from '../../assets/ERPP.jpg'; // يمكنك استبدالها بالصورة المناسبة
 
 const ERPDevelopment = () => {
   return (

@@ -1,8 +1,8 @@
 import React from 'react';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
-import Image from '../../assets/Main1.jpg';
-import Process from '../../assets/ERP.png';
+import Image from '../../assets/pharam.jpg';
+import Process from '../../assets/pro.jpg';
 
 const ERPPharmaIndustries = () => {
   return (

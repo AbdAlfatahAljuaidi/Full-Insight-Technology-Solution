@@ -1,8 +1,8 @@
 import React from 'react';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
-import Image from '../../assets/epicor_cover.jpeg';
-import Process from '../../assets/epicor_cover.jpeg';
+import Image from '../../assets/Micro.png';
+import Process from '../../assets/Microsoft_Dynamics365_blog-1170x617.jpg';
 
 const D365FinanceOperations = () => {
   return (

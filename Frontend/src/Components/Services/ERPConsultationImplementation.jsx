@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
-import Image from '../../assets/Main1.jpg';
+import Image from '../../assets/shacke.jpg';
 import Process from '../../assets/ERP.png';
 
 const ERPConsultationImplementation = () => {

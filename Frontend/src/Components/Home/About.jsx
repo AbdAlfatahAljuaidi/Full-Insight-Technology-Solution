@@ -3,6 +3,10 @@ import { FaLightbulb, FaGlobe, FaMobileAlt, FaDatabase } from 'react-icons/fa';
 import { SiWebflow } from 'react-icons/si';
 import { Link } from 'react-router-dom';
 
+import md1 from '../../assets/md1.png'
+import md2 from '../../assets/md2.png'
+import epicor from '../../assets/epicor-logo.svg'
+
 
 
 import {
@@ -34,7 +38,7 @@ const About = () => {
         <div className="cards flex flex-wrap justify-center gap-8">
           <div className="card p-6 bg-white shadow-lg rounded-lg border-r-4 border-transparent w-full sm:w-1/2 md:w-1/3 lg:w-1/4 hover:transform hover:scale-105 transition-all duration-300">
             <div className="icon-container flex justify-center items-center mb-4 transition-transform duration-500 transform hover:rotate-360">
-              <IoServer className="text-6xl text-[#0078B8] mt-5  " />
+              <img src={epicor} className="text-6xl text-[#0078B8] mt-5 w-52  " />
             </div>
             <h1 className="text-xl font-semibold mb-2">Epicor ERP</h1>
             <h4 className="text-sm mb-4 text-gray-600">
@@ -48,7 +52,7 @@ const About = () => {
 
           <div className="card p-6 bg-white shadow-lg rounded-lg border-r-4 border-transparent w-full sm:w-1/2 md:w-1/3 lg:w-1/4 hover:transform hover:scale-105 transition-all duration-300">
             <div className="icon-container flex justify-center items-center mb-4 transition-transform duration-500 transform hover:rotate-360">
-              <CloudIcon className="text-4xl text-[#0078B8]  w-20" />
+              <img src={md1} className="text-4xl text-[#0078B8]  w-52" />
             </div>
             <h1 className="text-xl font-semibold mb-2">Microsoft D365 Finance and Operation </h1>
             <h4 className="text-sm mb-4 text-gray-600">
@@ -64,7 +68,7 @@ const About = () => {
 
           <div className="card p-6 bg-white shadow-lg rounded-lg border-r-4 border-transparent w-full sm:w-1/2 md:w-1/3 lg:w-1/4 hover:transform hover:scale-105 transition-all duration-300">
             <div className="icon-container flex justify-center items-center mb-4 transition-transform duration-500 transform hover:rotate-360">
-              <UsersIcon className="text-4xl text-[#0078B8]  w-20" />
+              <img src={md2} className="text-4xl text-[#0078B8]  w-52" />
             </div>
             <h1 className="text-xl font-semibold mb-2">Microsoft D365 Business Central</h1>
             <h4 className="text-sm mb-4 text-gray-600">

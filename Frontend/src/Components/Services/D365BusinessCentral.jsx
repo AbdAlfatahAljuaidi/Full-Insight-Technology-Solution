@@ -2,7 +2,9 @@ import React from 'react';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import Image from '../../assets/Image 1 .jpeg';
-import Process from '../../assets/ERP.png';
+import Process from '../../assets/Business-Central-Circle-of-Products.jpg';
+import Central from '../../assets/Central.png';
+
 
 const D365BusinessCentral = () => {
   return (
@@ -11,7 +13,7 @@ const D365BusinessCentral = () => {
       <div className="container mx-auto px-6 py-12 flex-1">
         <div className="bg-white shadow-lg rounded-2xl p-8 max-w-5xl mx-auto text-gray-800">
           <h1 className="text-5xl font-bold text-[#0078B8] mb-8 text-center">Microsoft D365 Business Central: A Comprehensive Overview</h1>
-          <img src={Image} alt="Microsoft D365 Business Central" className="w-full rounded-lg mb-6" />
+          <img src={Central} alt="Microsoft D365 Business Central" className="w-full rounded-lg mb-6" />
           
           <p className="text-lg leading-relaxed mb-6">
             Microsoft Dynamics 365 Business Central is an all-in-one business management solution designed for small and medium-sized enterprises (SMEs). It enables businesses to streamline operations, enhance decision-making, and improve financial visibility through AI-driven insights and automation.
