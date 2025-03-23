@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
+const apiUrl = import.meta.env.VITE_REACT_APP_BACKEND_BASEURL;
 
 const Form = () => {
   // تحديد حالة البيانات
@@ -30,7 +31,7 @@ const Form = () => {
     setLoading(true);  // تفعيل حالة التحميل
 
     try {
-      const response = await axios.post('http://localhost:4000/submit-form', formData);
+      const response = await axios.post(`${apiUrl}/submit-form`, formData);
 
       if (response.status === 200) {
        
