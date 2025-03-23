@@ -143,10 +143,10 @@ const Nav = ({changeLanguage }) => {
           </DialogPanel>
           
         </Dialog>
-        <div>
+        {/* <div>
         <button onClick={() => changeLanguage("en")}>English</button>
         <button onClick={() => changeLanguage("ar")}>العربية</button>
-      </div>
+      </div> */}
       </header>
     
     </div>
