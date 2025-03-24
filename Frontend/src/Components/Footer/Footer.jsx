@@ -40,7 +40,7 @@ const Footer = () => {
             <div className="text-gray-400 space-y-4">
               {/* السعودية */}
               <div>
-                <h4 className="font-semibold text-white">Saudi Arabia</h4>
+                <h4 className="font-semibold text-white">Saudi Arabia ,HQ</h4>
                 <p>Phone: +966 56 811 1156​</p>
                 <p>Address: Riyadh, Saudi Arabia</p>
               </div>

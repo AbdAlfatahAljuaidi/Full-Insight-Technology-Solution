@@ -36,6 +36,10 @@ import { IoServer } from 'react-icons/io5';
 import md1 from '../../assets/md1.png'
 import md2 from '../../assets/md2.png'
 import epicor from '../../assets/epicor-logo.svg'
+import md3 from '../../assets/icons8-medicine-48.png'
+import md4 from '../../assets/icons8-consultation-48.png'
+import md5 from '../../assets/icons8-development-48.png'
+
 
 // تعديل الخيارات المتعلقة بـ Service
 const serviceItems = [
@@ -120,7 +124,7 @@ const Nav = ({changeLanguage }) => {
 </div>
 
 <div className="flex items-center gap-x-4 p-3 text-sm hover:bg-gray-100 rounded-lg">
-  <ShieldCheckIcon className="h-10 w-56 text-[#0078B8]" />
+  <img src={md3} className="h-20 w-[370px] text-[#0078B8]" />
   <div>
     <Link to="/ERPPharmaIndustries">
       <a className="block font-semibold text-gray-900 hover:text-hover">ERP For Pharmaceutical Industries</a>
@@ -132,7 +136,7 @@ const Nav = ({changeLanguage }) => {
 </div>
 
 <div className="flex items-center gap-x-4 p-3 text-sm hover:bg-gray-100 rounded-lg">
- <BriefcaseIcon className="h-10 w-56 text-[#0078B8]" />
+<img src={md4} className="h-32 w-[110px] text-[#0078B8]" />
   <div>
     <Link to="/ERPConsultationImplementation">
       <a className="block font-semibold text-gray-900 hover:text-hover">ERP Consultation and Implementation</a>
@@ -144,7 +148,7 @@ const Nav = ({changeLanguage }) => {
 </div>
 
 <div className="flex items-center gap-x-4 p-3 text-sm hover:bg-gray-100 rounded-lg">
-  <GlobeAltIcon className="h-10 w-56 text-[#0078B8]" />
+<img src={md5} className="h-20 w-[240px] text-[#0078B8]" />
   <div>
     <Link to="/ERPDevelopment">
       <a className="block font-semibold text-gray-900 hover:text-hover">ERP Development</a>
