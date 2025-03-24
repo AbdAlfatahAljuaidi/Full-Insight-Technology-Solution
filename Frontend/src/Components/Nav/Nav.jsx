@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 'use client';
+import { useTranslation } from 'react-i18next';
 
 import {
   Dialog,
@@ -43,6 +44,8 @@ const serviceItems = [
 const Nav = ({changeLanguage }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const { t, i18n } = useTranslation();
+
   return (
     <div>
       <header className="bg-white shadow-lg">
@@ -64,12 +67,12 @@ const Nav = ({changeLanguage }) => {
           </div>
 
           <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-            <Link to={'/'}><a className="text-lg font-semibold text-[#0078B8] hover:text-hover">Home</a></Link>
-            <Link to={'/about'}> <a className="text-lg font-semibold text-[#0078B8] hover:text-hover">About</a></Link>
+            <Link to={'/'}><a className="text-lg font-semibold text-[#0078B8] hover:text-hover">{t('Home')}</a></Link>
+            <Link to={'/about'}> <a className="text-lg font-semibold text-[#0078B8] hover:text-hover">{t('About')}</a></Link>
 
             <Popover className="relative">
               <PopoverButton className="flex items-center gap-x-2 text-lg font-semibold text-[#0078B8] hover:text-hover">
-                Service
+                {t('Service')}
                 <ChevronDownIcon className="h-5 w-5 text-gray-400" />
               </PopoverButton>
               <PopoverPanel className="absolute top-full -left-8 z-10 mt-3 w-72 bg-white ring-1 shadow-xl rounded-lg">
@@ -89,13 +92,13 @@ const Nav = ({changeLanguage }) => {
               </PopoverPanel>
             </Popover>
 
-            <Link to={'/successstory'}><a className="text-lg font-semibold text-[#0078B8] hover:text-hover">Successful Story</a></Link>
-            <Link to={'/MostQuestions'}><a className="text-lg font-semibold text-[#0078B8] hover:text-hover">Support & Help</a></Link>
+            <Link to={'/successstory'}><a className="text-lg font-semibold text-[#0078B8] hover:text-hover">{t('Successful Story')}</a></Link>
+            <Link to={'/MostQuestions'}><a className="text-lg font-semibold text-[#0078B8] hover:text-hover"> {t('Most Questions')}</a></Link>
           </PopoverGroup>
 
           <div className="hidden lg:flex lg:items-center lg:gap-6 ml-8">
             <a href="#" className="text-lg font-semibold flex items-center gap-3 bg-[#0078B8] text-white px-4 py-2 rounded-lg shadow-md hover:bg-hover">
-              <PhoneIcon className="h-5 w-5 text-white" /> <Link to={'/Contact'}>Contact Us</Link>
+              <PhoneIcon className="h-5 w-5 text-white" /> <Link to={'/Contact'}> {t('Contact Us')}</Link>
             </a>
           </div>
         </nav>
@@ -111,11 +114,11 @@ const Nav = ({changeLanguage }) => {
               </button>
             </div>
             <div className="mt-6 space-y-4">
-              <Link to={'/'}><a className="block py-2 text-lg font-semibold text-gray-900 hover:text-hover">Home</a></Link>
-              <Link to={'/about'}><a className="block py-2 text-lg font-semibold text-gray-900 hover:text-hover">About</a></Link>
+              <Link to={'/'}><a className="block py-2 text-lg font-semibold text-gray-900 hover:text-hover">{t('Home')}</a></Link>
+              <Link to={'/about'}><a className="block py-2 text-lg font-semibold text-gray-900 hover:text-hover">{t('About')}</a></Link>
               <Disclosure>
                 <DisclosureButton className="flex w-full items-center justify-between py-2 text-lg font-semibold border-b">
-                  Service
+                   {t('Service')}
                   <ChevronDownIcon className="h-5 w-5" />
                 </DisclosureButton>
                 <DisclosurePanel className="mt-2 space-y-2">
@@ -129,14 +132,14 @@ const Nav = ({changeLanguage }) => {
 </DisclosurePanel>
 
               </Disclosure>
-              <Link to={'/successstory'}><a className="block py-2 text-lg font-semibold text-gray-900 hover:text-hover">Successful Story</a></Link>
-              <Link to={'/MostQuestions'}><a className="block py-2 text-lg font-semibold text-gray-900 hover:text-hover">Support & Help</a></Link>
+              <Link to={'/successstory'}><a className="block py-2 text-lg font-semibold text-gray-900 hover:text-hover">{t('Successful Story')}</a></Link>
+              <Link to={'/MostQuestions'}><a className="block py-2 text-lg font-semibold text-gray-900 hover:text-hover">{t('Most Questions')}</a></Link>
             </div>
             
             <div className="pt-6">
               <Link to={'/Contact'}>
                 <h1 className="block text-lg font-semibold flex items-center gap-3 bg-main text-white px-4 py-2 rounded-lg shadow-md hover:bg-hover">
-                  <PhoneIcon className="h-5 w-5 text-white" />Contact Us
+                  <PhoneIcon className="h-5 w-5 text-white" />{t('Contact Us')}
                 </h1>
               </Link>
               
@@ -146,10 +149,10 @@ const Nav = ({changeLanguage }) => {
           </DialogPanel>
           
         </Dialog>
-        {/* <div>
+         <div>
         <button onClick={() => changeLanguage("en")}>English</button>
         <button onClick={() => changeLanguage("ar")}>العربية</button>
-      </div> */}
+      </div> 
       </header>
     
     </div>

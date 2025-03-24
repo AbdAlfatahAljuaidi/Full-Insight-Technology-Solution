@@ -12,8 +12,12 @@ i18n.use(initReactI18next).init({
     },
     ar: {
       translation: {
-        "hello": "مرحباً",
-        "welcome": "مرحباً بك في موقعنا"
+        "Home": "الصفحة الرئيسية",
+        "About": "عنا",
+        "Service": "خداماتنا",
+        "Successful Story": "قصص نجاحنا",
+        "Most Questions": " الاسئلة الشائعة ",
+        "Contact Us": "للتواصل",
       }
     }
   },

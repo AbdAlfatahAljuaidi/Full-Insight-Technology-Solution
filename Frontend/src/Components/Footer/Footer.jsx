@@ -14,7 +14,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Full Insight Technology Solution</h3>
             <p className="text-gray-400">
-            We are a leading company in the industry, providing innovative solutions to our clients worldwide. We are also part of Al Haq Company.
+            We are a leading company in the industry, providing innovative solutions to our clients worldwide.
             </p>
             <div className='flex mt-3 '>
 
