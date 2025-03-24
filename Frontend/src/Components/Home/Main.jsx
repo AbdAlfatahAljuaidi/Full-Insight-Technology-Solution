@@ -9,7 +9,7 @@ import EpicorImage from '../../assets/ERP.png';
 import MicrosoftImage from '../../assets/Microsoft_Dynamics365_blog-1170x617.jpg';
 import Main3 from '../../assets/Image 1 .jpeg';
 import Epicor from '../../assets/OIP.jpeg';
-import Epicor4 from '../../assets/Business-Central-Circle-of-Products.jpg';
+import Epicor4 from '../../assets/ImportedPhoto.764456857.626315.jpeg';
 import { Link } from 'react-router-dom';
 
 const Main = () => {

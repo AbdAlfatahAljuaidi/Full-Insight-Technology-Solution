@@ -31,11 +31,17 @@ import logo from '../../assets/logo.png';
 import { Link } from "react-router-dom";
 import { IoServer } from 'react-icons/io5';
 
+
+
+import md1 from '../../assets/md1.png'
+import md2 from '../../assets/md2.png'
+import epicor from '../../assets/epicor-logo.svg'
+
 // تعديل الخيارات المتعلقة بـ Service
 const serviceItems = [
-  { name: 'Epicor ERP', description: ' A comprehensive ERP solution that streamlines business processes, from finance to supply chain management.', href: 'Epicor-ERP', icon: IoServer },
-  { name: 'Microsoft D365 Finance and Operation', description: ' A cloud-based ERP system that optimizes financial management, operations, and supply chain efficiency.', href: 'D365FinanceOperations', icon: CloudIcon },
-  { name: 'Microsoft D365 Business Central', description: ' An all-in-one business management solution for finance, sales, customer service, and operations.', href: 'D365BusinessCentral', icon: UsersIcon },
+  { name: 'Epicor ERP', description: ' A comprehensive ERP solution that streamlines business processes, from finance to supply chain management.', href: 'Epicor-ERP', icon: epicor },
+  { name: 'Microsoft D365 Finance and Operation', description: ' A cloud-based ERP system that optimizes financial management, operations, and supply chain efficiency.', href: 'D365FinanceOperations', icon: md1 },
+  { name: 'Microsoft D365 Business Central', description: ' An all-in-one business management solution for finance, sales, customer service, and operations.', href: 'D365BusinessCentral', icon: md2 },
   { name: 'ERP For Pharamcetual Industries', description: ' A specialized ERP system that ensures compliance, manages inventory, and enhances efficiency in pharmaceutical businesses.', href: 'ERPPharmaIndustries', icon: ShieldCheckIcon },
   { name: 'ERP Consultation and Implementation', description: 'Services that help businesses select, customize, and integrate ERP systems for better efficiency.', href: 'ERPConsultationImplementation', icon: BriefcaseIcon },
   { name: 'ERP Development', description: 'Customizing and building ERP solutions to optimize business processes and scalability.', href: 'ERPDevelopment', icon: GlobeAltIcon },
@@ -75,19 +81,80 @@ const Nav = ({changeLanguage }) => {
                 {t('Service')}
                 <ChevronDownIcon className="h-5 w-5 text-gray-400" />
               </PopoverButton>
-              <PopoverPanel className="absolute top-full -left-8 z-10 mt-3 w-72 bg-white ring-1 shadow-xl rounded-lg">
-                <div className="p-4 space-y-2">
-                  {serviceItems.map((item) => (
-                    <div key={item.name} className="flex items-center gap-x-4 p-3 text-sm hover:bg-gray-100 rounded-lg">
-                      <item.icon className="h-16 w-16 text-[#0078B8]" />
-                      <div>
-                        <Link to={`/${item.href}`}>
-                          <a className="block font-semibold text-gray-900 hover:text-hover">{item.name}</a>
-                        </Link>
-                        <p className="mt-1 text-gray-600 text-xs">{item.description}</p>
-                      </div>
-                    </div>
-                  ))}
+              <PopoverPanel className="absolute top-full -left-8 z-10 mt-3 w-96 bg-white ring-1 shadow-xl rounded-lg">
+                <div className="p-4 space-y-2 ">
+                <div className="flex items-center gap-x-4 p-3 text-sm hover:bg-gray-100 rounded-lg">
+  <img src={epicor} className="h-10 w-28 text-[#0078B8]" />
+  <div>
+    <Link to="/Epicor-ERP">
+      <a className="block font-semibold text-gray-900 hover:text-hover">Epicor ERP</a>
+    </Link>
+    <p className="mt-1 text-gray-600 text-xs">
+      A comprehensive ERP solution that streamlines business processes, from finance to supply chain management.
+    </p>
+  </div>
+</div>
+
+<div className="flex items-center gap-x-4 p-3 text-sm hover:bg-gray-100 rounded-lg">
+  <img src={md1} className="h-10 w-28 text-[#0078B8]" />
+  <div>
+    <Link to="/D365FinanceOperations">
+      <a className="block font-semibold text-gray-900 hover:text-hover">Microsoft D365 Finance and Operation</a>
+    </Link>
+    <p className="mt-1 text-gray-600 text-xs">
+      A cloud-based ERP system that optimizes financial management, operations, and supply chain efficiency.
+    </p>
+  </div>
+</div>
+
+<div className="flex items-center gap-x-4 p-3 text-sm hover:bg-gray-100 rounded-lg">
+  <img src={md2} className="h-10 w-28 text-[#0078B8]" />
+  <div>
+    <Link to="/D365BusinessCentral">
+      <a className="block font-semibold text-gray-900 hover:text-hover">Microsoft D365 Business Central</a>
+    </Link>
+    <p className="mt-1 text-gray-600 text-xs">
+      An all-in-one business management solution for finance, sales, customer service, and operations.
+    </p>
+  </div>
+</div>
+
+<div className="flex items-center gap-x-4 p-3 text-sm hover:bg-gray-100 rounded-lg">
+  <ShieldCheckIcon className="h-10 w-56 text-[#0078B8]" />
+  <div>
+    <Link to="/ERPPharmaIndustries">
+      <a className="block font-semibold text-gray-900 hover:text-hover">ERP For Pharmaceutical Industries</a>
+    </Link>
+    <p className="mt-1 text-gray-600 text-xs">
+      A specialized ERP system that ensures compliance, manages inventory, and enhances efficiency in pharmaceutical businesses.
+    </p>
+  </div>
+</div>
+
+<div className="flex items-center gap-x-4 p-3 text-sm hover:bg-gray-100 rounded-lg">
+ <BriefcaseIcon className="h-10 w-56 text-[#0078B8]" />
+  <div>
+    <Link to="/ERPConsultationImplementation">
+      <a className="block font-semibold text-gray-900 hover:text-hover">ERP Consultation and Implementation</a>
+    </Link>
+    <p className="mt-1 text-gray-600 text-xs">
+      Services that help businesses select, customize, and integrate ERP systems for better efficiency.
+    </p>
+  </div>
+</div>
+
+<div className="flex items-center gap-x-4 p-3 text-sm hover:bg-gray-100 rounded-lg">
+  <GlobeAltIcon className="h-10 w-56 text-[#0078B8]" />
+  <div>
+    <Link to="/ERPDevelopment">
+      <a className="block font-semibold text-gray-900 hover:text-hover">ERP Development</a>
+    </Link>
+    <p className="mt-1 text-gray-600 text-xs">
+      Customizing and building ERP solutions to optimize business processes and scalability.
+    </p>
+  </div>
+</div>
+
                 </div>
               </PopoverPanel>
             </Popover>
