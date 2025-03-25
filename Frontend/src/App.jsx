@@ -17,6 +17,7 @@ import About from "./Components/About/About";
 import "react-toastify/dist/ReactToastify.css";
 import { useTranslation } from 'react-i18next';
 import Nav from "./Components/Nav/Nav";
+import CareerPage from "./Components/Contact/CareerPage";
 
 const App = () => {
  
@@ -42,6 +43,7 @@ const App = () => {
       <Route path="/ERPDevelopment" element={<ERPDevelopment />} />
       <Route path="/SuccessStory" element={<SuccessStory />} />
       <Route path="/About" element={<About />} />
+      <Route path="/CareerPage" element={<CareerPage />} />
     </Routes>
     </BrowserRouter>
   );

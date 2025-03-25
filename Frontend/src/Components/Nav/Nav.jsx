@@ -168,8 +168,29 @@ const Nav = ({changeLanguage }) => {
           </PopoverGroup>
 
           <div className="hidden lg:flex lg:items-center lg:gap-6 ml-8">
-            <a href="#" className="text-lg font-semibold flex items-center gap-3 bg-[#0078B8] text-white px-4 py-2 rounded-lg shadow-md hover:bg-hover">
-              <PhoneIcon className="h-5 w-5 text-white" /> <Link to={'/Contact'}> {t('Contact Us')}</Link>
+            <a href="#" className="text-lg font-semibold flex items-center gap-3  text-white px-4 py-2 rounded-lg  ">
+              <PhoneIcon className="h-5 w-5 text-white" /> 
+              <Popover className="relative">
+  <PopoverButton className="flex items-center gap-x-2 text-lg font-semibold text-[#0078B8] hover:text-hover">
+    {t('Contact Us')}
+    <ChevronDownIcon className="h-5 w-5 text-gray-400" />
+  </PopoverButton>
+  <PopoverPanel className="absolute top-full -left-8 z-10 mt-3 w-60 bg-white ring-1 shadow-xl rounded-lg">
+    <div className="p-4 space-y-2">
+        <Link to="/Contact">
+      <div className="flex items-center gap-x-4 p-3 text-sm hover:bg-gray-100 rounded-lg">
+          <a className="block font-semibold text-gray-900 hover:text-hover">{t('Contact')}</a>
+      </div>
+        </Link>
+        <Link to="/CareerPage">
+      <div className="flex items-center gap-x-4 p-3 text-sm hover:bg-gray-100 rounded-lg">
+          <a className="block font-semibold text-gray-900 hover:text-hover">{t('Career Page')}</a>
+      </div>
+        </Link>
+    </div>
+  </PopoverPanel>
+</Popover>
+
             </a>
           </div>
         </nav>
@@ -208,11 +229,26 @@ const Nav = ({changeLanguage }) => {
             </div>
             
             <div className="pt-6">
-              <Link to={'/Contact'}>
-                <h1 className="block text-lg font-semibold flex items-center gap-3 bg-main text-white px-4 py-2 rounded-lg shadow-md hover:bg-hover">
+            <Disclosure>
+                <DisclosureButton className="flex w-full items-center justify-between py-2 text-lg font-semibold border-b">
+                   {t('Service')}
+                  <ChevronDownIcon className="h-5 w-5" />
+                </DisclosureButton>
+                <DisclosurePanel className="mt-2 space-y-2">
+                <Link to={'/Contact'}>
+                <h1 className="block text-lg font-semibold flex items-center    py-2 rounded-lg  ">
                   <PhoneIcon className="h-5 w-5 text-white" />{t('Contact Us')}
                 </h1>
               </Link>
+              <Link to={'/CareerPage'}>
+                <h1 className="block text-lg font-semibold flex items-center    py-2 rounded-lg  ">
+                  <PhoneIcon className="h-5 w-5 text-white" />{t('Career Page')}
+                </h1>
+              </Link>
+</DisclosurePanel>
+
+              </Disclosure>
+           
               
             </div>
             
