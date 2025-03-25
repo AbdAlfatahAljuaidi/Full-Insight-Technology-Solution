@@ -3,6 +3,7 @@ import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import Image from '../../assets/epicor_cover.jpeg'
 import Process from '../../assets/ERP.png'
+import { Link } from 'react-router-dom';
 
 
 const Epicor = () => {
@@ -74,6 +75,12 @@ const Epicor = () => {
             Epicor ERP is a robust and dynamic solution that helps businesses optimize operations and remain competitive in a rapidly evolving market.
             With advanced technology, industry-specific solutions, and flexible deployment options, Epicor ERP is the ideal choice for businesses looking to enhance efficiency and growth.
           </p>
+   <div className='mt-5'>
+   <span className=''>If you want more information</span> <Link to={'/contact'} ><button className="ml-2 px-4 py-2 bg-[#0078B8] text-white font-semibold rounded-lg hover:bg-[#005F8A] transition duration-300">
+    Get in Touch
+  </button>
+  </Link>
+   </div>
         </div>
       </div>
       <Footer />

@@ -3,6 +3,7 @@ import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import Image from '../../assets/shacke.jpg';
 import Process from '../../assets/ERP.png';
+import { Link } from 'react-router-dom';
 
 const ERPConsultationImplementation = () => {
   return (
@@ -70,6 +71,12 @@ const ERPConsultationImplementation = () => {
           <p className="text-lg leading-relaxed">
             ERP consultation and implementation services provide businesses with the expertise needed to successfully deploy and maintain an ERP system. With the right approach, companies can improve efficiency, reduce costs, and achieve long-term success.
           </p>
+         <div className='mt-5'>
+           <span className=''>If you want more information</span> <Link to={'/contact'} ><button className="ml-2 px-4 py-2 bg-[#0078B8] text-white font-semibold rounded-lg hover:bg-[#005F8A] transition duration-300">
+            Get in Touch
+          </button>
+          </Link>
+           </div>
         </div>
       </div>
       <Footer />

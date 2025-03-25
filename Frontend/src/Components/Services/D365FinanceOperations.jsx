@@ -3,6 +3,7 @@ import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import Image from '../../assets/Micro.png';
 import Process from '../../assets/Microsoft_Dynamics365_blog-1170x617.jpg';
+import { Link } from 'react-router-dom';
 
 const D365FinanceOperations = () => {
   return (
@@ -70,6 +71,12 @@ const D365FinanceOperations = () => {
           <p className="text-lg leading-relaxed">
             Microsoft Dynamics 365 Finance & Operations is a powerful ERP solution that helps businesses streamline operations, enhance financial decision-making, and scale efficiently. With its AI-driven analytics, automation, and cloud capabilities, it is the go-to choice for enterprises looking to modernize their business processes.
           </p>
+        <div className='mt-5'>
+          <span className=''>If you want more information</span> <Link to={'/contact'} ><button className="ml-2 px-4 py-2 bg-[#0078B8] text-white font-semibold rounded-lg hover:bg-[#005F8A] transition duration-300">
+           Get in Touch
+         </button>
+         </Link>
+          </div>
         </div>
       </div>
       <Footer />

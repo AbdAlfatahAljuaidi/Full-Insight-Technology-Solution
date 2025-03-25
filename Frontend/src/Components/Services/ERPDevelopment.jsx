@@ -1,7 +1,8 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
-import Image from '../../assets/Black and Yellow Web Developer LinkedIn Banner.png'; // يمكنك استبدالها بالصورة المناسبة
+import Image from '../../assets/erpsolution.webp'; // يمكنك استبدالها بالصورة المناسبة
 import Process from '../../assets/ERPP.jpg'; // يمكنك استبدالها بالصورة المناسبة
+import { Link } from 'react-router-dom';
 
 const ERPDevelopment = () => {
   return (
@@ -66,9 +67,17 @@ const ERPDevelopment = () => {
           </ol>
           
           <h2 className="text-3xl font-semibold text-[#0078B8] mt-10 mb-6">Conclusion</h2>
-          <p className="text-lg leading-relaxed">
-            ERP development is an investment in streamlining business operations and ensuring long-term scalability. By choosing an ERP system, companies can automate workflows, improve decision-making, and stay competitive in an ever-changing market.
-          </p>
+<p className="text-lg leading-relaxed">
+  ERP development is an investment in streamlining business operations and ensuring long-term scalability. By choosing an ERP system, companies can automate workflows, improve decision-making, and stay competitive in an ever-changing market. 
+
+</p>
+
+ <div className='mt-5'>
+   <span className=''>If you want more information</span> <Link to={'/contact'} ><button className="ml-2 px-4 py-2 bg-[#0078B8] text-white font-semibold rounded-lg hover:bg-[#005F8A] transition duration-300">
+    Get in Touch
+  </button>
+  </Link>
+   </div>
         </div>
       </div>
       <Footer />

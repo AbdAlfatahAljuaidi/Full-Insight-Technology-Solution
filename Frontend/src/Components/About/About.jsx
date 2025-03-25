@@ -22,14 +22,14 @@ const About = () => {
         {/* Our Vision Section */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
           <div className="bg-[#1f2937] p-8 rounded-xl shadow-xl text-center hover:bg-[#2d3748] transition-all duration-300">
-            <FaChartLine className="text-4xl mb-4 text-[#0078B8]" />
+            <FaChartLine className="text-4xl mb-4 m-auto text-[#0078B8]" />
             <h2 className="text-2xl font-semibold mb-4">Our Vision</h2>
             <p className="text-gray-300">
               To be the global leader in delivering cutting-edge solutions that drive business transformation.
             </p>
           </div>
           <div className="bg-[#1f2937] p-8 rounded-xl shadow-xl text-center hover:bg-[#2d3748] transition-all duration-300">
-            <FaUsers className="text-4xl mb-4 text-[#0078B8]" />
+            <FaUsers className="text-4xl mb-4 m-auto text-[#0078B8]" />
             <h2 className="text-2xl font-semibold mb-4">Our Team</h2>
             <p className="text-gray-300">
               A diverse team of experts, from technology innovators to industry specialists, working together to
@@ -37,7 +37,7 @@ const About = () => {
             </p>
           </div>
           <div className="bg-[#1f2937] p-8 rounded-xl shadow-xl text-center hover:bg-[#2d3748] transition-all duration-300">
-            <FaCog className="text-4xl mb-4 text-[#0078B8]" />
+            <FaCog className="text-4xl mb-4 m-auto text-[#0078B8]" />
             <h2 className="text-2xl font-semibold mb-4">Our Approach</h2>
             <p className="text-gray-300">
               We focus on continuous innovation, agility, and customer-centric solutions to drive real business value.
@@ -54,7 +54,7 @@ const About = () => {
         </div>
 
         {/* Key Milestones */}
-        <div className="text-center mb-16">
+        {/* <div className="text-center mb-16">
           <h2 className="text-4xl font-semibold mb-6 text-[#0078B8]">Our Key Milestones</h2>
           <div className="flex flex-wrap justify-center gap-12">
             <div className="bg-[#2d3748] p-6 rounded-xl shadow-xl text-center max-w-xs hover:bg-[#1f2937] transition-all duration-300">
@@ -70,7 +70,7 @@ const About = () => {
               <p className="text-gray-300">Achieved milestone of serving 500+ clients across various industries.</p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Call to Action */}
         <div className="text-center mt-16">

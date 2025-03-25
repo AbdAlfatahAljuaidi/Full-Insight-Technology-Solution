@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer';
 import Image from '../../assets/Image 1 .jpeg';
 import Process from '../../assets/Business-Central-Circle-of-Products.jpg';
 import Central from '../../assets/Central.png';
+import { Link } from 'react-router-dom';
 
 
 const D365BusinessCentral = () => {
@@ -72,6 +73,12 @@ const D365BusinessCentral = () => {
           <p className="text-lg leading-relaxed">
             Microsoft Dynamics 365 Business Central is a powerful and user-friendly ERP solution tailored for small and medium businesses. With its cloud-based capabilities, seamless integration, and AI-driven insights, it helps organizations streamline their operations and achieve sustainable growth.
           </p>
+         <div className='mt-5'>
+           <span className=''>If you want more information</span> <Link to={'/contact'} ><button className="ml-2 px-4 py-2 bg-[#0078B8] text-white font-semibold rounded-lg hover:bg-[#005F8A] transition duration-300">
+            Get in Touch
+          </button>
+          </Link>
+           </div>
         </div>
       </div>
       <Footer />

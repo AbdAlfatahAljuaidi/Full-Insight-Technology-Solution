@@ -3,6 +3,7 @@ import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import Image from '../../assets/pharam.jpg';
 import Process from '../../assets/pro.jpg';
+import { Link } from 'react-router-dom';
 
 const ERPPharmaIndustries = () => {
   return (
@@ -61,6 +62,12 @@ const ERPPharmaIndustries = () => {
           <p className="text-lg leading-relaxed">
             Implementing an ERP solution in the pharmaceutical industry enhances operational efficiency, ensures compliance, and optimizes the supply chain. A well-integrated ERP system is crucial for maintaining quality and driving business growth.
           </p>
+        <div className='mt-5'>
+          <span className=''>If you want more information</span> <Link to={'/contact'} ><button className="ml-2 px-4 py-2 bg-[#0078B8] text-white font-semibold rounded-lg hover:bg-[#005F8A] transition duration-300">
+           Get in Touch
+         </button>
+         </Link>
+          </div>
         </div>
       </div>
       <Footer />

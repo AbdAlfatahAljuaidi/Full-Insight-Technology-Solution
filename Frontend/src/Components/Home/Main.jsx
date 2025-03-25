@@ -6,10 +6,11 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination, Autoplay } from 'swiper';
 
 import EpicorImage from '../../assets/ERP.png';
-import MicrosoftImage from '../../assets/Microsoft_Dynamics365_blog-1170x617.jpg';
+import MicrosoftImage from '../../assets/chatmicr.webp';
 import Main3 from '../../assets/Image 1 .jpeg';
 import Epicor from '../../assets/OIP.jpeg';
-import Epicor4 from '../../assets/ImportedPhoto.764456857.626315.jpeg';
+import Epicor4 from '../../assets/chatcentral.webp';
+import Epicor5 from '../../assets/chaterp.webp';
 import { Link } from 'react-router-dom';
 
 const Main = () => {
@@ -29,7 +30,7 @@ const Main = () => {
             {/* Epicor Slide */}
             <SwiperSlide>
                 <div className="relative w-full h-[87vh]">
-                    <img className="object-cover w-full h-full" src={Epicor} alt="Epicor ERP" />
+                    <img className="object-cover w-full h-full" src={Epicor5} alt="Epicor ERP" />
                     <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50">
                         <div className="text-center">
                             <h1 className="text-white text-xl">STREAMLINE YOUR BUSINESS OPERATIONS</h1>
