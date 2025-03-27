@@ -6,8 +6,10 @@ import image from '../../assets/Deal.jpg';
 import { Link } from 'react-router-dom';
 import PPI from '../../Logo/PPI.png'
 import pdf from '../../assets/Epicor-ERP-Pharma-Group-CS-ENS.pdf'
+import { useTranslation } from 'react-i18next';
 
 const SuccessStory = () => {
+  const { t } = useTranslation();
  
 
   return (
@@ -16,17 +18,19 @@ const SuccessStory = () => {
       <div className="container mx-auto px-6 py-12 flex-1 text-white">
         <div className="bg-white text-gray-800 shadow-2xl rounded-lg p-10 md:p-16">
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-6 text-[#0078B8]">
-            Client Success Stories
+           {t('Client Success Stories')}
           </h1>
-          <img src={image} alt="" className="w-full h-[60vh]" />
+          <img src={image} alt="" className="w-full h-[80vh] " />
           
           {/* النص على شكل نقاط */}
           <div className="my-10">
             <ul className="list-disc pl-5 text-lg md:text-xl leading-relaxed text-gray-700">
-              <li>Impact of modern technologies in improving operational efficiency.</li>
-              <li>Tailored services that provide solutions to unique business challenges.</li>
-              <li>Achieving measurable results such as cost reduction and increased customer satisfaction.</li>
-              <li>Industries transformed through scalable solutions, including manufacturing, healthcare, and retail.</li>
+              <li>{t('Impact of modern technologies in improving operational efficiency')}</li>
+              <li>{t('Tailored services')}</li>
+              <li>{t('Achieving measurable')}
+              </li>
+              <li>{t('Industries transformed')}
+              </li>
             </ul>
           </div>
 
@@ -34,11 +38,12 @@ const SuccessStory = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-[#f1f1f1] p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
               <div className="flex items-center space-x-4 mb-4">
-                <img src={PPI} className="w-28  " />
-                <h3 className="text-xl font-semibold">Pharma Pharmaceutical Industries</h3>
+                <img src={PPI} className="w-28 mx-3 " />
+                <h3 className="text-xl font-semibold">{t('Pharma Pharmaceutical Industries')}
+                </h3>
               </div>
               <p className="text-gray-700 mb-4">
-              We developed an ERP system for the pharmaceutical company to improve efficiency and streamline key operations like inventory, sales, and finance, enabling better decision-making and business growth.
+              {t('We developed')}
 
 
               </p>
@@ -47,7 +52,8 @@ const SuccessStory = () => {
   target="_blank" 
 >
   <button className="bg-[#0078B8] text-white px-4 py-2 rounded-lg hover:bg-[#005f7f] transition-all duration-200">
-    Learn More
+  {t('Learn More')}
+
   </button>
 </a>
 
@@ -98,13 +104,16 @@ const SuccessStory = () => {
 
           {/* Call to Action */}
           <div className="mt-16 text-center">
-            <h2 className="text-3xl font-semibold text-[#0078B8] mb-4">Start Your Success Story with Us</h2>
+            <h2 className="text-3xl font-semibold text-[#0078B8] mb-4">{t('Start Your Success Story with Us')}
+            </h2>
             <p className="text-lg leading-relaxed text-gray-700 mb-6">
-              Let us help you transform your business operations with our innovative solutions and services.
+            {t('Let us')}
+
             </p>
             <Link to={'/Contact'}>
               <button className="bg-[#0078B8] text-white px-8 py-3 text-lg rounded-full hover:bg-[#005f7f] transition-all duration-200">
-                Get Started
+              {t('Get Started')}
+
               </button>
             </Link>
           </div>

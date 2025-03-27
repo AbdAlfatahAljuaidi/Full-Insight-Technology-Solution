@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 const apiUrl = import.meta.env.VITE_REACT_APP_BACKEND_BASEURL;
+import { useTranslation } from 'react-i18next';
 
 const Form = () => {
   // تحديد حالة البيانات
@@ -54,11 +55,14 @@ const Form = () => {
     }
   };
 
+  const { t } = useTranslation();
+
   return (
     <div className="my-16 px-6">
-      <h3 className="text-center text-[#0078B8] font-semibold text-lg uppercase">Contact Us</h3>
-      <h1 className="text-center text-3xl font-bold mt-2 text-gray-800">Get In Touch</h1>
-      <h2 className="text-center text-lg text-gray-500 mt-2 mb-8">We’d love to hear from you. Please fill out this form.</h2>
+      <h3 className="text-center text-[#0078B8] font-semibold text-lg uppercase">{t('Contact Us')}</h3>
+      <h1 className="text-center text-3xl font-bold mt-2 text-gray-800">{t('Get In Touch')}</h1>
+      <h2 className="text-center text-lg text-gray-500 mt-2 mb-8">{t('fill out')}
+      </h2>
 
       <div className="max-w-lg mx-auto p-8 bg-white shadow-xl rounded-lg">
         <div className="space-y-6">
@@ -68,7 +72,7 @@ const Form = () => {
               name="firstName"
               value={formData.firstName}
               onChange={handleInputChange}
-              placeholder="First Name"
+              placeholder={t('First Name')}
               className="border border-gray-300 p-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0078B8] transition-all duration-300"
               required
             />
@@ -77,7 +81,7 @@ const Form = () => {
               name="lastName"
               value={formData.lastName}
               onChange={handleInputChange}
-              placeholder="Last Name"
+              placeholder={t('Last Name')}
               className="border border-gray-300 p-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0078B8] transition-all duration-300"
               required
             />
@@ -87,7 +91,7 @@ const Form = () => {
             name="email"
             value={formData.email}
             onChange={handleInputChange}
-            placeholder="Email"
+            placeholder={t('Email')}
             className="border border-gray-300 p-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0078B8] transition-all duration-300"
             required
           />
@@ -96,14 +100,14 @@ const Form = () => {
             name="phone"
             value={formData.phone}
             onChange={handleInputChange}
-            placeholder="Phone Number"
+            placeholder={t('Phone Number')}
             className="border border-gray-300 p-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0078B8] transition-all duration-300"
           />
           <textarea
             name="message"
             value={formData.message}
             onChange={handleInputChange}
-            placeholder="Your Message"
+            placeholder={t('Your Message')}
             className="border border-gray-300 p-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0078B8] transition-all duration-300 h-40"
             required
           />
@@ -116,6 +120,7 @@ const Form = () => {
           >
             {loading ? ' Sending' : 'Submit'}
           </button>
+   
         </div>
       </div>
     </div>

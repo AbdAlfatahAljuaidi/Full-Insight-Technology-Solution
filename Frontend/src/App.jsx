@@ -27,6 +27,11 @@ const App = () => {
     i18n.changeLanguage(lng);
   };
 
+  useEffect(() => {
+    // تغيير اتجاه الصفحة بناءً على اللغة
+    document.documentElement.dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
+  }, [i18n.language]);
+
   return (
     <BrowserRouter>
     <ToastContainer />
