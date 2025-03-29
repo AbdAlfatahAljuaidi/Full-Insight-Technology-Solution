@@ -57,6 +57,20 @@
         padding-top: 15px;
         border-top: 1px solid #ddd;
       }
+      .cv-link {
+        display: inline-block;
+        background: #3498db;
+        color: #fff;
+        text-decoration: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+      .cv-link:hover {
+        background: #2980b9;
+      }
     </style>
   </head>
   <body>
@@ -72,6 +86,11 @@
           <p><strong>Phone Number:</strong> {{phone}}</p>
           <p><strong>Email Address:</strong> {{email}}</p>
           <p><strong>Message:</strong> {{message}}</p>
+          
+          <!-- إضافة رابط تحميل CV فقط إذا كان موجودًا -->
+          {{#if file}}
+          <p><strong>CV:</strong> <a class="cv-link" href="{{file}}" download>Download CV</a></p>
+          {{/if}}
         </div>
 
         <p>Please follow up with the client as soon as possible.</p>

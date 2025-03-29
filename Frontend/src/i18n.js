@@ -54,6 +54,18 @@ i18n.use(initReactI18next).init({
                          "Email": "Email",
                          "Phone Number": "Phone Number",
                          "Your Message": "Your Message",
+                         //main
+                         "STREAMLINE": "STREAMLINE YOUR BUSINESS OPERATIONS",
+                         "Epicor ERP Solutions": "Epicor ERP Solutions",
+                         "Manage": "Manage your operations seamlessly, from procurement to production and sales.",
+                         "Microsoft D365 Business Central": "Microsoft D365 Business Central",
+                         
+"An ERP system": "An ERP system to boost efficiency, manage employees and payroll, provide financial reports, control inventory, enhance productivity, and support strategic decisions with analytics.",
+"Read More": "Read More",
+"Microsoft D365 Finance and Operation": "Microsoft D365 Finance and Operation",
+"A solution": "A solution to streamline finance, operations, inventory, payroll, and support decision-making with real-time insights.",
+"Microsoft": "Microsoft D365 Business Central is an all-in-one solution that streamlines finance, sales, customer service, and inventory management with real-time insights for better decision-making.",
+"ERP Development": "ERP Development",
 
 
 
@@ -118,7 +130,17 @@ i18n.use(initReactI18next).init({
               "Email": "البريد الإلكتروني",
               "Phone Number": "رقم الهاتف",
               "Your Message": "رسالتك",
-
+              //main
+"STREAMLINE": "تبسيط عمليات عملك",
+"Epicor ERP Solutions": "حلول Epicor ERP",
+"Manage": "إدارة عملياتك بسلاسة، من المشتريات إلى الإنتاج والمبيعات.",
+"Microsoft D365 Business Central": "مايكروسوفت D365 بيزنس سنترال",
+"An ERP system": "نظام ERP لتعزيز الكفاءة، وإدارة الموظفين وكشوف الرواتب، وتوفير التقارير المالية، والتحكم في المخزون، وزيادة الإنتاجية، ودعم القرارات الاستراتيجية من خلال التحليلات.",
+"Read More": "اقرأ المزيد",
+"Microsoft D365 Finance and Operation": "مايكروسوفت D365 للمالية والعمليات",
+"A solution": "حل يساعد على تبسيط المالية والعمليات والمخزون وكشوف الرواتب، ودعم اتخاذ القرار من خلال رؤى فورية.",
+"Microsoft": "مايكروسوفت D365 بيزنس سنترال هو حل متكامل يعمل على تبسيط المالية والمبيعات وخدمة العملاء وإدارة المخزون مع رؤى فورية لاتخاذ قرارات أفضل.",
+"ERP Development": "تطوير ERP",
 
 
 

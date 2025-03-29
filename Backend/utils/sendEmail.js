@@ -2,11 +2,11 @@ const { createTransport } = require("nodemailer");
 const path = require("path");
 const hbs = require("nodemailer-express-handlebars");
 require("dotenv").config();
-module.exports = async (to, firstName, lastName, phone, email, message, subject, template) => {
+
+module.exports = async (to, firstName, lastName, phone, email, message,file, subject, template) => {
   try {
     const transporter = createTransport({
       host: process.env.HOST,
-
       port: 587,
       auth: {
         user: process.env.USER, 
@@ -14,7 +14,7 @@ module.exports = async (to, firstName, lastName, phone, email, message, subject,
       },
     });
 
-    // using custom email template with nodemailer express handler
+    // إعدادات قالب البريد الإلكتروني باستخدام handlebars
     const handlebarsOptions = {
       viewEngine: {
         extname: ".handlebars",
@@ -27,6 +27,7 @@ module.exports = async (to, firstName, lastName, phone, email, message, subject,
 
     transporter.use("compile", hbs(handlebarsOptions));
 
+    // إعداد خيارات البريد الإلكتروني
     const mailOptions = {
       from: {
         name: " طلب من العميل ",
@@ -40,9 +41,13 @@ module.exports = async (to, firstName, lastName, phone, email, message, subject,
         lastName,   // الاسم الأخير
         phone,      // رقم الهاتف
         email,      // البريد الإلكتروني
-        message,
+        message,    // الرسالة
+file
       },
+     
     };
+
+    // إرسال البريد الإلكتروني
     return transporter.sendMail(mailOptions);
   } catch (error) {
     console.log(error);

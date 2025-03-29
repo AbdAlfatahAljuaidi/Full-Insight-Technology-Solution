@@ -23,6 +23,10 @@ const messageSchema = new mongoose.Schema({
     type: String,
   
   },
+  file: {
+    type: String, // يمكنك تخزين رابط الملف هنا إذا كنت تستخدم تخزينًا سحابيًا
+    required: false, // اجعله اختياريًا
+  },
 });
 
 const Message = mongoose.model('Message', messageSchema);
@@ -34,6 +38,10 @@ function MessageValidation(object) {
         phone: Joi.string(),
         email: Joi.string().email().min(3).max(40).required(),
         message: Joi.string().min(3).required(),
+       // الحقل الجديد اختياري
+       file: Joi.string().optional(),
+   
+    
     });
 
     return schema.validate(object);

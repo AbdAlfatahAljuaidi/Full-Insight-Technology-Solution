@@ -8,6 +8,14 @@ const  sendEmail  = require('./utils/sendEmail'); // استيراد دالة sen
 require("dotenv").config();
 const i18n = require('i18n');
 
+const multer = require('multer');
+const path = require('path');
+
+const {  cloudinary } = require('./config/cloudinary'); // استيراد الإعدادات
+const { log } = require('console');
+
+
+
 
 app.use(cors());
 app.use(express.json());
@@ -36,6 +44,18 @@ i18n.configure({
   });
 
 
+  
+
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, path.join(__dirname, 'uploads'));
+    },
+    filename: (req, file, cb) => {
+        cb(null, Date.now() + '-' + file.originalname);
+    }
+});
+
+const upload = multer({ storage: storage });
 
 
 // POST endpoint لتلقي البيانات من الفورم وإرسالها عبر البريد الإلكتروني
@@ -64,6 +84,43 @@ app.post('/submit-form', async (req, res) => {
         res.status(200).json({ message: "تم إرسال الرسالة بنجاح!" });
     } catch (err) {
         console.log(err);
+        res.status(500).json({ error: "حدث خطأ في الخادم. يرجى المحاولة لاحقًا." });
+    }
+});
+
+
+
+
+
+
+app.post('/submit-Resume', upload.single('file'), async (req, res) => {
+    try {
+        const { firstName, lastName, phone, email, message } = req.body;
+
+  // التحقق من البيانات المدخلة
+  const { error } = MessageValidation({ firstName, lastName, phone, email, message });
+  if (error) {
+      return res.status(400).json({ message: error.details[0].message });
+  }
+
+      
+        const filePath = path.join(__dirname, `./uploads/${req.file.filename}`);
+        const file = await cloudinary.uploader.upload(filePath);
+      
+        
+
+      
+
+        // إرسال البريد الإلكتروني
+        const subject = "طلب توظيف";
+        const template = "clientDetails";
+        await sendEmail(process.env.EMAIL, firstName, lastName, phone, email, message, file.url, subject, template);
+
+        
+
+         res.status(200).json({ message: "تم إرسال الرسالة بنجاح!", file });
+    } catch (err) {
+        console.error(err);
         res.status(500).json({ error: "حدث خطأ في الخادم. يرجى المحاولة لاحقًا." });
     }
 });

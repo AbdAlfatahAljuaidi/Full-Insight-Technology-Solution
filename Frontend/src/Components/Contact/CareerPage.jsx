@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 const apiUrl = import.meta.env.VITE_REACT_APP_BACKEND_BASEURL;
+import { useTranslation } from 'react-i18next';
 
 const CareerPage = () => {
   const [formData, setFormData] = useState({
@@ -67,6 +68,10 @@ const CareerPage = () => {
     }
   };
 
+
+  
+  const { t } = useTranslation();
+
   return (
     <div className="my-16 px-6">
       <h3 className="text-center text-[#0078B8] font-semibold text-lg uppercase">Join Our Team</h3>
@@ -81,7 +86,7 @@ const CareerPage = () => {
               name="firstName"
               value={formData.firstName}
               onChange={handleInputChange}
-              placeholder="First Name"
+              placeholder={t('First Name')}
               className="border border-gray-300 p-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0078B8] transition-all duration-300"
               required
             />
@@ -90,7 +95,7 @@ const CareerPage = () => {
               name="lastName"
               value={formData.lastName}
               onChange={handleInputChange}
-              placeholder="Last Name"
+              placeholder={t('Last Name')}
               className="border border-gray-300 p-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0078B8] transition-all duration-300"
               required
             />
@@ -100,7 +105,7 @@ const CareerPage = () => {
             name="email"
             value={formData.email}
             onChange={handleInputChange}
-            placeholder="Email"
+            placeholder={t('Email')}
             className="border border-gray-300 p-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0078B8] transition-all duration-300"
             required
           />
@@ -109,7 +114,7 @@ const CareerPage = () => {
             name="phone"
             value={formData.phone}
             onChange={handleInputChange}
-            placeholder="Phone Number"
+            placeholder={t('Phone')}
             className="border border-gray-300 p-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0078B8] transition-all duration-300"
           />
           <input

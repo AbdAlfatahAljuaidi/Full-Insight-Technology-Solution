@@ -12,8 +12,11 @@ import Epicor from '../../assets/OIP.jpeg';
 import Epicor4 from '../../assets/chatcentral.webp';
 import Epicor5 from '../../assets/chaterp.webp';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
-const Main = () => {
+const Main = ({changeLanguage }) => {
+
+    const { t, i18n } = useTranslation();
     return (
         <Swiper
             className="w-full"
@@ -29,18 +32,22 @@ const Main = () => {
         >
             {/* Epicor Slide */}
             <SwiperSlide>
-                <div className="relative w-full h-[87vh]">
+                <div className="relative w-full h-[87vh] text-left" dir="ltr">
                     <img className="object-cover w-full h-full" src={Epicor5} alt="Epicor ERP" />
                     <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50">
                         <div className="text-center">
-                            <h1 className="text-white text-xl">STREAMLINE YOUR BUSINESS OPERATIONS</h1>
-                            <h2 className="text-white text-5xl font-bold mt-3">Epicor ERP Solutions</h2>
+                            <h1 className="text-white text-xl">{t('STREAMLINE')}
+                            </h1>
+                            <h2 className="text-white text-5xl font-bold mt-3">{t('Epicor ERP Solutions')}
+                            </h2>
                             <h1 className="text-white text-xl mt-6">
-                                Manage your operations seamlessly, from procurement to production and sales.
+                            {t('Manage')}
+
                             </h1>
                             <Link to={'/contact'} >
                             <button className="mt-4 bg-[#0078B8] text-white rounded-lg px-9 py-3 hover:bg-blue-600 hover:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300">
-                                Learn More
+                             {t('Learn More')}
+
                             </button>
                             </Link>
                         </div>
@@ -62,7 +69,7 @@ const Main = () => {
 
                             <Link to={'/contact'} >
                             <button className="mt-4 bg-[#0078B8] text-white rounded-lg px-9 py-3 hover:bg-blue-600 hover:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300">
-                                Learn More
+                            {t('Learn More')}
                             </button>
                             </Link>
                         </div>
@@ -83,7 +90,7 @@ const Main = () => {
                             </h1>
                             <Link to={'/contact'} >
                             <button className="mt-4 bg-[#0078B8] text-white rounded-lg px-9 py-3 hover:bg-blue-600 hover:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300">
-                                Learn More
+                            {t('Learn More')}
                             </button>
                             </Link>
                         </div>

@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import md1 from '../../assets/md1.png'
 import md2 from '../../assets/md2.png'
 import epicor from '../../assets/epicor-logo.svg'
+import { useTranslation } from 'react-i18next';
 
 
 
@@ -26,8 +27,8 @@ import {
 import { IoServer } from 'react-icons/io5';
 
 
-const About = () => {
-  
+const About = ({changeLanguage }) => {
+    const { t, i18n } = useTranslation();
   return (
     <section className="about py-28  min-h-screen flex justify-center items-center">
       <div className="container px-4 text-center">
@@ -42,11 +43,12 @@ const About = () => {
             </div>
             <h1 className="text-xl font-semibold mb-2">Epicor ERP</h1>
             <h4 className="text-sm mb-4 text-gray-600">
-            An ERP system to boost efficiency, manage employees and payroll, provide financial reports, control inventory, enhance productivity, and support strategic decisions with analytics.
+            {t('An ERP system')}
+
             </h4>
             {/* Creative 'Read more' button */}
          <Link to={'/Epicor-ERP'} >  <a  className="readmore inline-block font-semibold py-2 px-6 bg-gradient-to-r from-main to-gray-300 text-white rounded-lg shadow-lg transform transition-all duration-300 hover:scale-110 hover:rotate-6 hover:shadow-2xl">
-              Read More
+         {t('Read More')}
             </a></Link> 
           </div>
 
@@ -54,14 +56,14 @@ const About = () => {
             <div className="icon-container flex justify-center items-center mb-4 transition-transform duration-500 transform hover:rotate-360">
               <img src={md1} className="text-4xl text-[#0078B8]  w-52" />
             </div>
-            <h1 className="text-xl font-semibold mb-2">Microsoft D365 Finance and Operation </h1>
+            <h1 className="text-xl font-semibold mb-2">{t('Microsoft D365 Finance and Operation')} </h1>
             <h4 className="text-sm mb-4 text-gray-600">
-            A solution to streamline finance, operations, inventory, payroll, and support decision-making with real-time insights.
+            {t('A solution')}
             </h4>
             {/* Creative 'Read more' button */}
             <Link to={'/D365FinanceOperations'}>
             <a  className="readmore inline-block text-indigo-600 font-semibold py-2 px-6 bg-gradient-to-r from-main to-gray-300 text-white rounded-lg shadow-lg transform transition-all duration-300 hover:scale-110 hover:rotate-6 hover:shadow-2xl">
-              Read More
+            {t('Read More')}
             </a>
             </Link>
           </div>
@@ -70,14 +72,15 @@ const About = () => {
             <div className="icon-container flex justify-center items-center mb-4 transition-transform duration-500 transform hover:rotate-360">
               <img src={md2} className="text-4xl text-[#0078B8]  w-52" />
             </div>
-            <h1 className="text-xl font-semibold mb-2">Microsoft D365 Business Central</h1>
+            <h1 className="text-xl font-semibold mb-2">{t('Microsoft D365 Business Central')}</h1>
             <h4 className="text-sm mb-4 text-gray-600">
-            Microsoft D365 Business Central is an all-in-one solution that streamlines finance, sales, customer service, and inventory management with real-time insights for better decision-making.
+            {t('Microsoft')}
+
             </h4>
             {/* Creative 'Read more' button */}
             <Link to={'/D365BusinessCentral'}>
             <a href="#" className="readmore inline-block text-indigo-600 font-semibold py-2 px-6 bg-gradient-to-r from-main to-gray-300 text-white rounded-lg shadow-lg transform transition-all duration-300 hover:scale-110 hover:rotate-6 hover:shadow-2xl">
-              Read More
+            {t('Read More')}
             </a>
             </Link>
           </div>
@@ -97,7 +100,7 @@ const About = () => {
             {/* Creative 'Read more' button */}
             <Link to={'/ERPPharmaIndustries'}>
             <a href="#" className="readmore inline-block text-indigo-600 font-semibold py-2 px-6 bg-gradient-to-r from-main to-gray-300 text-white rounded-lg shadow-lg transform transition-all duration-300 hover:scale-110 hover:rotate-6 hover:shadow-2xl">
-              Read More
+            {t('Read More')}
             </a>
             </Link>
           </div>
@@ -113,7 +116,7 @@ const About = () => {
             {/* Creative 'Read more' button */}
             <Link to={'/ERPConsultationImplementation'}>
             <a href="#" className="readmore inline-block text-indigo-600 font-semibold py-2 px-6 bg-gradient-to-r from-main to-gray-300 text-white rounded-lg shadow-lg transform transition-all duration-300 hover:scale-110 hover:rotate-6 hover:shadow-2xl">
-              Read More
+            {t('Read More')}
             </a>
             </Link>
           </div>
@@ -122,14 +125,15 @@ const About = () => {
             <div className="icon-container flex justify-center items-center mb-4 transition-transform duration-500 transform hover:rotate-360">
               <GlobeAltIcon className="text-4xl text-[#0078B8]  w-20" />
             </div>
-            <h1 className="text-xl font-semibold mb-2">ERP Development</h1>
+            <h1 className="text-xl font-semibold mb-2">{t('ERP Development')}
+            </h1>
             <h4 className="text-sm mb-4 text-gray-600">
             ERP development involves designing and customizing ERP systems to meet business needs, streamline operations, and enhance efficiency and scalability.
             </h4>
             {/* Creative 'Read more' button */}
             <Link to={'/ERPDevelopment'}>
             <a href="#" className="readmore inline-block text-indigo-600 font-semibold py-2 px-6 bg-gradient-to-r from-main to-gray-300 text-white rounded-lg shadow-lg transform transition-all duration-300 hover:scale-110 hover:rotate-6 hover:shadow-2xl">
-              Read More
+            {t('Read More')}
             </a>
             </Link>
           </div>
