@@ -1,23 +1,26 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-const Map = () => {
+
+const Map = ({changeLanguage }) => {
+  const { t, i18n } = useTranslation();
   return (
     <section className="container mx-auto px-4 py-16">
-      <h2 className="text-3xl font-bold text-center mb-8 text-[#0078B8]">More Info</h2>
+      <h2 className="text-3xl font-bold text-center mb-8 text-[#0078B8]">{t('More_Info')}</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
         {/* Jordan Contact Info */}
         <div className="p-6 border rounded-lg shadow-lg bg-white">
-          <h3 className="text-xl font-semibold mb-2">Jordan</h3>
-          <p className="text-gray-700">Phone: +962 6-523 3885</p>
-          <p className="text-gray-700">Address: Amman, Jordan</p>
+          <h3 className="text-xl font-semibold mb-2">{t('Jordan')}</h3>
+          <p className="text-gray-700">{t('Phone')}: +962 6-523 3885</p>
+          <p className="text-gray-700">{t('Addresst')}</p>
         </div>
 
         {/* Saudi Arabia Contact Info */}
         <div className="p-6 border rounded-lg shadow-lg bg-white">
           <h3 className="text-xl font-semibold mb-2">Saudi Arabia</h3>
-          <p className="text-gray-700">Phone: +966 56 811 1156</p>
-          <p className="text-gray-700">Address: Riyadh, Saudi Arabia</p>
+          <p className="text-gray-700">{t('Phone')}: +966 56 811 1156</p>
+          <p className="text-gray-700">{t('Address')}</p>
         </div>
       </div>
 

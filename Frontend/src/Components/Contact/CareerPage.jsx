@@ -81,9 +81,9 @@ const CareerPage = () => {
 
   return (
     <div className="my-16 px-6">
-      <h3 className="text-center text-[#0078B8] font-semibold text-lg uppercase">Join Our Team</h3>
-      <h1 className="text-center text-3xl font-bold mt-2 text-gray-800">Apply for a Job</h1>
-      <h2 className="text-center text-lg text-gray-500 mt-2 mb-8">Fill out the form to apply for a position with us.</h2>
+      <h3 className="text-center text-[#0078B8] font-semibold text-lg uppercase">{t('Join_Our_Team')}</h3>
+      <h1 className="text-center text-3xl font-bold mt-2 text-gray-800">{t('Apply_for_a_Job')}</h1>
+      <h2 className="text-center text-lg text-gray-500 mt-2 mb-8">{t('Fill_out_the_form_to_apply_for_a_position_with_us')}</h2>
 
       <div className="max-w-lg mx-auto p-8 bg-white shadow-xl rounded-lg">
         <div className="space-y-6">
@@ -135,7 +135,7 @@ const CareerPage = () => {
             name="message"
             value={formData.message}
             onChange={handleInputChange}
-            placeholder="Why do you want to join us?"
+            placeholder={t('Why_do_you_want_to_join_us')}
             className="border border-gray-300 p-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0078B8] transition-all duration-300 h-40"
           />
           <button
@@ -144,7 +144,7 @@ const CareerPage = () => {
             disabled={loading}
             className="w-full bg-[#0078B8] text-white py-3 rounded-lg hover:bg-[#005f8f] transition ease-in-out duration-300"
           >
-            {loading ? ' Sending' : 'Submit Application'}
+           {loading ? t('Sending') : t('Submit')}
           </button>
         </div>
       </div>

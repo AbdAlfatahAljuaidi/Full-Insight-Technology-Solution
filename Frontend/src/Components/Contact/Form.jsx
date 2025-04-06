@@ -118,7 +118,7 @@ const Form = () => {
             disabled={loading}
             className="w-full bg-[#0078B8] text-white py-3 rounded-lg hover:bg-[#005f8f] transition ease-in-out duration-300"
           >
-            {loading ? ' Sending' : 'Submit'}
+          {loading ? t('Sending') : t('Submit')}
           </button>
    
         </div>

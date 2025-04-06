@@ -32,7 +32,7 @@ const About = ({changeLanguage }) => {
   return (
     <section className="about py-28  min-h-screen flex justify-center items-center">
       <div className="container px-4 text-center">
-        <h3 className="text-[#0078B8] font-semibold text-xl mb-6">What we provide</h3>
+        <h3 className="text-[#0078B8] font-semibold text-xl mb-6"> {t('What we provide')}</h3>
         <h1 className="font-extrabold text-4xl text-gray-900 mb-12">ERP Solutions</h1>
 
         {/* First row of cards */}
@@ -92,9 +92,10 @@ const About = ({changeLanguage }) => {
             <div className="icon-container flex justify-center items-center mb-4 transition-transform duration-500 transform hover:rotate-360">
               <ShieldCheckIcon className="text-xl text-[#0078B8] w-20" />
             </div>
-            <h1 className="text-xl font-semibold mb-2">ERP For Pharamcetual Industries </h1>
+            <h1 className="text-xl font-semibold mb-2">{t('ERP_for_Pharmaceutical_Industries')} </h1>
             <h4 className="text-sm mb-4 text-gray-600">
-            ERP for pharmaceutical industries optimizes inventory, production, regulatory compliance, and financial management, improving efficiency, accuracy, and decision-making across operations.
+            {t('erp_for_pharmaceutical_industries')}
+
 
             </h4>
             {/* Creative 'Read more' button */}
@@ -109,9 +110,9 @@ const About = ({changeLanguage }) => {
             <div className="icon-container flex justify-center items-center mb-4 transition-transform duration-500 transform hover:rotate-360">
               <BriefcaseIcon className="text-4xl text-[#0078B8]  w-20" />
             </div>
-            <h1 className="text-xl font-semibold mb-2">ERP Consultation and Implementation</h1>
+            <h1 className="text-xl font-semibold mb-2">{t('ERP_Consultation_and_Implementation')}</h1>
             <h4 className="text-sm mb-4 text-gray-600">
-            ERP consultation and implementation services help businesses select, customize, and integrate ERP systems to improve operations and efficiency.
+            {t('ERP_Consultation_and_Implementation_Services')}
             </h4>
             {/* Creative 'Read more' button */}
             <Link to={'/ERPConsultationImplementation'}>
@@ -128,7 +129,7 @@ const About = ({changeLanguage }) => {
             <h1 className="text-xl font-semibold mb-2">{t('ERP Development')}
             </h1>
             <h4 className="text-sm mb-4 text-gray-600">
-            ERP development involves designing and customizing ERP systems to meet business needs, streamline operations, and enhance efficiency and scalability.
+            {t('ERP_development')}
             </h4>
             {/* Creative 'Read more' button */}
             <Link to={'/ERPDevelopment'}>

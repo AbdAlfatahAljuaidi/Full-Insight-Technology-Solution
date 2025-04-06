@@ -15,7 +15,7 @@ const D365FinanceOperations = () => {
           <img src={Image} alt="Microsoft D365 Finance & Operations" className="w-full rounded-lg mb-6" />
           
           <p className="text-lg leading-relaxed mb-6">
-            Microsoft Dynamics 365 Finance & Operations is a comprehensive enterprise resource planning (ERP) solution designed to enhance financial visibility, optimize supply chains, and drive business growth. With AI-driven insights and automation, it supports industries such as finance, manufacturing, retail, and supply chain management.
+            Finance and Operations apps are enterprise resource planning (ERP) software as a service (SaaS) offerings that are built on and for Microsoft Azure. The Finance and Operations service provides organizations with ERP functionality that supports their unique requirements and helps them adjust to constantly changing business environments, without requiring that they manage infrastructure.
           </p>
           
           <h2 className="text-3xl font-semibold text-[#0078B8] mt-10 mb-6">Why Choose D365 Finance & Operations?</h2>
@@ -38,15 +38,29 @@ const D365FinanceOperations = () => {
             </div>
           </div>
           
-          <h2 className="text-3xl font-semibold text-[#002050] mt-10 mb-6">Industries Benefiting from D365 Finance & Operations</h2>
-          <div className="flex flex-wrap gap-4">
-            <span className="bg-[#0078B8] text-white px-5 py-2 rounded-lg">Finance</span>
-            <span className="bg-[#0078B8] text-white px-5 py-2 rounded-lg">Retail</span>
-            <span className="bg-[#0078B8] text-white px-5 py-2 rounded-lg">Manufacturing</span>
-            <span className="bg-[#0078B8] text-white px-5 py-2 rounded-lg">Supply Chain</span>
-            <span className="bg-[#0078B8] text-white px-5 py-2 rounded-lg">Healthcare</span>
+          <h2 className="text-3xl font-semibold text-[#002050] mt-10 mb-6">Microsoft D365 Product Suites</h2>
+          <div className="text-lg text-gray-700 space-y-6">
+            <h3 className="text-xl font-semibold text-[#0078B8]">Dynamics 365 Finance</h3>
+            <p>
+              Microsoft Dynamics 365 Finance enables organizations to monitor the performance of financial operations in real-time, predict outcomes, and make data-driven decisions to drive business agility and growth. It empowers users to do business anywhere, anytime, with an intuitive user interface personalized for their roles and preferences.
+            </p>
+
+            <h3 className="text-xl font-semibold text-[#0078B8]">Dynamics 365 Supply Chain Management</h3>
+            <p>
+              Microsoft Dynamics 365 Supply Chain Management empowers employees and organizations with the ability to obtain a unified view of inventory, warehouse, manufacturing, service, and logistics with predictive analytics that turn data into insights to support better strategic decisions.
+            </p>
+
+            <h3 className="text-xl font-semibold text-[#0078B8]">Dynamics 365 Commerce</h3>
+            <p>
+              Dynamics 365 Commerce—built on the proven Dynamics 365 Retail capabilities—delivers a comprehensive omnichannel solution that unifies back-office, in-store, call center, and digital experiences. Dynamics 365 Commerce enables you to build brand loyalty through personalized customer engagements, increase revenue with improved employee productivity, optimize operations to reduce costs, and drive supply chain efficiencies, ultimately delivering better business outcomes.
+            </p>
+
+            <h3 className="text-xl font-semibold text-[#0078B8]">Dynamics 365 Human Resources</h3>
+            <p>
+              Dynamics 365 Human Resources automates human resources tasks throughout the employment life cycle, including organization management, hiring, compensation, benefits, leave and absence, performance, and more. It also helps manage compensation and benefits, employee performance, and ensures that your human resource programs meet changing global regulations.
+            </p>
           </div>
-          
+
           <h2 className="text-3xl font-semibold text-[#0078B8] mt-10 mb-6">Benefits of Using D365 Finance & Operations</h2>
           <ul className="list-disc list-inside text-lg text-gray-700 space-y-3">
             <li>Enhanced financial visibility and forecasting</li>
@@ -71,11 +85,14 @@ const D365FinanceOperations = () => {
           <p className="text-lg leading-relaxed">
             Microsoft Dynamics 365 Finance & Operations is a powerful ERP solution that helps businesses streamline operations, enhance financial decision-making, and scale efficiently. With its AI-driven analytics, automation, and cloud capabilities, it is the go-to choice for enterprises looking to modernize their business processes.
           </p>
-        <div className='mt-5'>
-          <span className=''>If you want more information</span> <Link to={'/contact'} ><button className="ml-2 px-4 py-2 bg-[#0078B8] text-white font-semibold rounded-lg hover:bg-[#005F8A] transition duration-300">
-           Get in Touch
-         </button>
-         </Link>
+          
+          <div className='mt-5'>
+            <span>If you want more information</span> 
+            <Link to={'/contact'} >
+              <button className="ml-2 px-4 py-2 bg-[#0078B8] text-white font-semibold rounded-lg hover:bg-[#005F8A] transition duration-300">
+                Get in Touch
+              </button>
+            </Link>
           </div>
         </div>
       </div>

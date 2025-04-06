@@ -5,82 +5,71 @@ import Image from '../../assets/epicor_cover.jpeg'
 import Process from '../../assets/ERP.png'
 import { Link } from 'react-router-dom';
 
-
 const Epicor = () => {
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col">
     
       <div className="container mx-auto px-6 py-12 flex-1">
         <div className="bg-white shadow-lg rounded-2xl p-8 max-w-5xl mx-auto text-gray-800">
-          <h1 className="text-5xl font-bold text-[#0078B8] mb-8 text-center">Epicor ERP: A Comprehensive Overview</h1>
+          <h1 className="text-5xl font-bold text-[#0078B8] mb-8 text-center">Epicor ERP Overview</h1>
           <img src={Image} alt="Epicor ERP" className="w-full rounded-lg mb-6" />
           
           <p className="text-lg leading-relaxed mb-6">
-            Epicor ERP is a cutting-edge enterprise resource planning system designed to enhance business operations, 
-            drive efficiency, and provide real-time insights. Tailored for industries such as manufacturing, 
-            distribution, retail, and services, Epicor offers a scalable and flexible solution to meet diverse business needs.
+            Technological barriers are making it increasingly difficult to access and integrate your critical business information, holding you back from realizing true productivity. Epicor's global ERP platform combines the consistency and adaptability you need to be a true competitor worldwide. It is designed to reflect how the business world has shifted towards an emphasis on immediate results, delivering the visibility needed to drive effective collaboration and real results.
+          </p>
+
+          <h2 className="text-3xl font-semibold text-[#0078B8] mt-10 mb-6">Key Benefits of Epicor ERP</h2>
+          <p className="text-lg leading-relaxed mb-6">
+            Epicor provides a comprehensive solution that helps businesses break down the barriers of outdated systems and drive true operational efficiency. With Epicor ERP, you can streamline your financial processes, enhance collaboration across departments, and ensure that your supply chain runs smoothly while meeting your regulatory needs.
           </p>
           
-          <h2 className="text-3xl font-semibold text-[#0078B8]  mt-10 mb-6">Why Choose Epicor ERP?</h2>
+          <h2 className="text-3xl font-semibold text-[#0078B8] mt-10 mb-6">Key Areas of Epicor ERP</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">User-Friendly Interface</h3>
-              <p className="text-gray-600">Modern and intuitive UI that simplifies navigation and enhances user experience.</p>
+              <h3 className="text-xl font-semibold text-gray-900">Financial Management</h3>
+              <p className="text-gray-600">
+                Epicor streamlines and automates your financial processes, from sophisticated reporting down to general ledger journals, while giving you the visibility needed to meet regulations and comply with audit demands.
+              </p>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">AI & Automation</h3>
-              <p className="text-gray-600">Leverage artificial intelligence for predictive analytics and automated workflows.</p>
+              <h3 className="text-xl font-semibold text-gray-900">Sales Management</h3>
+              <p className="text-gray-600">
+                Enhance collaboration among departments and locations to ensure smooth sailing throughout the order cycle, from quote to cash, and ultimately better manage demand.
+              </p>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">Cloud & On-Premise</h3>
-              <p className="text-gray-600">Flexible deployment options that adapt to your business infrastructure.</p>
+              <h3 className="text-xl font-semibold text-gray-900">Supply Chain Management</h3>
+              <p className="text-gray-600">
+                Ensure your supply chain drives efficiency, empowering you to deliver quality service and product quickly at a lower cost.
+              </p>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-900">Industry-Specific Solutions</h3>
-              <p className="text-gray-600">Customizable solutions designed for manufacturing, retail, and more.</p>
+              <h3 className="text-xl font-semibold text-gray-900">Customer Relationship Management</h3>
+              <p className="text-gray-600">
+                Realize efficiency in your operations and optimize relationships with a panoramic view of your interactions with customers, partners, and suppliers.
+              </p>
+            </div>
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-gray-900">Compliance & Risk Management</h3>
+              <p className="text-gray-600">
+                Today's regulations are becoming increasingly complex. Epicor helps you manage compliance effectively and better control risk.
+              </p>
             </div>
           </div>
-          
-          <h2 className="text-3xl font-semibold text-[#0078B8]  mt-10 mb-6">Industries Benefiting from Epicor ERP</h2>
-          <div className="flex flex-wrap gap-4">
-            <span className="bg-[#0078B8] text-white px-5 py-2 rounded-lg">Manufacturing</span>
-            <span className="bg-[#0078B8] text-white px-5 py-2 rounded-lg">Retail</span>
-            <span className="bg-[#0078B8] text-white px-5 py-2 rounded-lg">Distribution</span>
-            <span className="bg-[#0078B8] text-white px-5 py-2 rounded-lg">Automotive</span>
-            <span className="bg-[#0078B8] text-white px-5 py-2 rounded-lg">Healthcare</span>
-          </div>
-          
-          <h2 className="text-3xl font-semibold text-[#0078B8]  mt-10 mb-6">Benefits of Using Epicor ERP</h2>
-          <ul className="list-disc list-inside text-lg text-gray-700 space-y-3">
-            <li>Improved operational efficiency and productivity</li>
-            <li>Enhanced decision-making through data-driven insights</li>
-            <li>Streamlined supply chain and inventory management</li>
-            <li>Better customer relationship management</li>
-            <li>Cost reduction through automation and process optimization</li>
-          </ul>
-          
-          <h2 className="text-3xl font-semibold text-[#0078B8]  mt-10 mb-6">Implementation Process</h2>
-          <img src={Process} alt="Implementation Process" className="w-full rounded-lg mb-6" />
-          <ol className="list-decimal list-inside text-lg text-gray-700 space-y-3">
-            <li>Assessment of business requirements</li>
-            <li>Customization and configuration</li>
-            <li>Data migration and system integration</li>
-            <li>Testing and quality assurance</li>
-            <li>User training and deployment</li>
-            <li>Ongoing support and system optimization</li>
-          </ol>
-          
-          <h2 className="text-3xl font-semibold text-[#0078B8]  mt-10 mb-6">Conclusion</h2>
+
+          <h2 className="text-3xl font-semibold text-[#0078B8] mt-10 mb-6">Conclusion</h2>
           <p className="text-lg leading-relaxed">
-            Epicor ERP is a robust and dynamic solution that helps businesses optimize operations and remain competitive in a rapidly evolving market.
-            With advanced technology, industry-specific solutions, and flexible deployment options, Epicor ERP is the ideal choice for businesses looking to enhance efficiency and growth.
+            And this is only the beginning. Say goodbye to the barriers that have plagued your business until now with a solution that can be configured to suit your specific needs. Epicor drives superior business performance with insight throughout your organization that is current and fits the context of your needs.
           </p>
-   <div className='mt-5'>
-   <span className=''>If you want more information</span> <Link to={'/contact'} ><button className="ml-2 px-4 py-2 bg-[#0078B8] text-white font-semibold rounded-lg hover:bg-[#005F8A] transition duration-300">
-    Get in Touch
-  </button>
-  </Link>
-   </div>
+          
+          <div className="mt-5">
+            <span>If you want more information, feel free to contact us.</span>
+            <Link to={'/contact'}>
+              <button className="mx-2 gap-3 px-4 py-2 bg-[#0078B8] text-white font-semibold rounded-lg hover:bg-[#005F8A] transition duration-300">
+                Get in Touch
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
       <Footer />

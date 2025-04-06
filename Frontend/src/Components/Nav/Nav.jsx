@@ -43,12 +43,12 @@ import md5 from '../../assets/icons8-development-48.png'
 
 // تعديل الخيارات المتعلقة بـ Service
 const serviceItems = [
-  { name: 'Epicor ERP', description: ' A comprehensive ERP solution that streamlines business processes, from finance to supply chain management.', href: 'Epicor-ERP', icon: epicor },
-  { name: 'Microsoft D365 Finance and Operation', description: ' A cloud-based ERP system that optimizes financial management, operations, and supply chain efficiency.', href: 'D365FinanceOperations', icon: md1 },
-  { name: 'Microsoft D365 Business Central', description: ' An all-in-one business management solution for finance, sales, customer service, and operations.', href: 'D365BusinessCentral', icon: md2 },
-  { name: 'ERP For Pharamcetual Industries', description: ' A specialized ERP system that ensures compliance, manages inventory, and enhances efficiency in pharmaceutical businesses.', href: 'ERPPharmaIndustries', icon: ShieldCheckIcon },
-  { name: 'ERP Consultation and Implementation', description: 'Services that help businesses select, customize, and integrate ERP systems for better efficiency.', href: 'ERPConsultationImplementation', icon: BriefcaseIcon },
-  { name: 'ERP Development', description: 'Customizing and building ERP solutions to optimize business processes and scalability.', href: 'ERPDevelopment', icon: GlobeAltIcon },
+  { name: 'Epicor ERP', description: 'ERP_Solution', href: 'Epicor-ERP', icon: epicor },
+  { name: 'Microsoft D365 Finance and Operation', description: 'ERP_Cloud_Solution', href: 'D365FinanceOperations', icon: md1 },
+  { name: 'Microsoft D365 Business Central', description: 'ERP_Business_Management_Solution', href: 'D365BusinessCentral', icon: md2 },
+  { name: 'ERP_for_Pharmaceutical_Industries', description: 'ERP_Specialized_Pharmaceutical', href: 'ERPPharmaIndustries', icon: ShieldCheckIcon },
+  { name: 'ERP_Consultation_and_Implementation', description: 'ERP_Consultation_Services', href: 'ERPConsultationImplementation', icon: BriefcaseIcon },
+  { name: 'ERP Development', description: 'ERP_Customization_Services', href: 'ERPDevelopment', icon: GlobeAltIcon },
 ]
 
 const Nav = ({changeLanguage }) => {
@@ -94,7 +94,7 @@ const Nav = ({changeLanguage }) => {
       <a className="block font-semibold text-gray-900 hover:text-hover">Epicor ERP</a>
     </Link>
     <p className="mt-1 text-gray-600 text-xs">
-      A comprehensive ERP solution that streamlines business processes, from finance to supply chain management.
+    {t('ERP_Solution')}
     </p>
   </div>
 </div>
@@ -103,10 +103,10 @@ const Nav = ({changeLanguage }) => {
   <img src={md1} className="h-10 w-28 text-[#0078B8]" />
   <div>
     <Link to="/D365FinanceOperations">
-      <a className="block font-semibold text-gray-900 hover:text-hover">Microsoft D365 Finance and Operation</a>
+      <a className="block font-semibold text-gray-900 hover:text-hover">{t('Microsoft D365 Finance and Operation')}</a>
     </Link>
     <p className="mt-1 text-gray-600 text-xs">
-      A cloud-based ERP system that optimizes financial management, operations, and supply chain efficiency.
+    {t('ERP_Cloud_Solution')}
     </p>
   </div>
 </div>
@@ -115,10 +115,10 @@ const Nav = ({changeLanguage }) => {
   <img src={md2} className="h-10 w-28 text-[#0078B8]" />
   <div>
     <Link to="/D365BusinessCentral">
-      <a className="block font-semibold text-gray-900 hover:text-hover">Microsoft D365 Business Central</a>
+      <a className="block font-semibold text-gray-900 hover:text-hover"> {t('Microsoft D365 Business Central')}</a>
     </Link>
     <p className="mt-1 text-gray-600 text-xs">
-      An all-in-one business management solution for finance, sales, customer service, and operations.
+    {t('ERP_Business_Management_Solution')}
     </p>
   </div>
 </div>
@@ -127,10 +127,10 @@ const Nav = ({changeLanguage }) => {
   <img src={md3} className="h-20 w-[370px] text-[#0078B8]" />
   <div>
     <Link to="/ERPPharmaIndustries">
-      <a className="block font-semibold text-gray-900 hover:text-hover">ERP For Pharmaceutical Industries</a>
+      <a className="block font-semibold text-gray-900 hover:text-hover"> {t('ERP_for_Pharmaceutical_Industries')}</a>
     </Link>
     <p className="mt-1 text-gray-600 text-xs">
-      A specialized ERP system that ensures compliance, manages inventory, and enhances efficiency in pharmaceutical businesses.
+    {t('ERP_Specialized_Pharmaceutical')}
     </p>
   </div>
 </div>
@@ -139,10 +139,10 @@ const Nav = ({changeLanguage }) => {
 <img src={md4} className="h-32 w-[110px] text-[#0078B8]" />
   <div>
     <Link to="/ERPConsultationImplementation">
-      <a className="block font-semibold text-gray-900 hover:text-hover">ERP Consultation and Implementation</a>
+      <a className="block font-semibold text-gray-900 hover:text-hover">{t('ERP_Consultation_and_Implementation')}</a>
     </Link>
     <p className="mt-1 text-gray-600 text-xs">
-      Services that help businesses select, customize, and integrate ERP systems for better efficiency.
+    {t('ERP_Consultation_Services')}
     </p>
   </div>
 </div>
@@ -151,10 +151,10 @@ const Nav = ({changeLanguage }) => {
 <img src={md5} className="h-20 w-[240px] text-[#0078B8]" />
   <div>
     <Link to="/ERPDevelopment">
-      <a className="block font-semibold text-gray-900 hover:text-hover">ERP Development</a>
+      <a className="block font-semibold text-gray-900 hover:text-hover"> {t('ERP Development')}</a>
     </Link>
     <p className="mt-1 text-gray-600 text-xs">
-      Customizing and building ERP solutions to optimize business processes and scalability.
+    {t('ERP_Customization_Services')}
     </p>
   </div>
 </div>
@@ -217,7 +217,8 @@ const Nav = ({changeLanguage }) => {
   {serviceItems.map((item) => (
     <Link key={item.name} to={`/${item.href}`} className="block">
       <DisclosureButton as="div" className="block py-2 pl-6 text-sm font-semibold text-gray-900 hover:text-hover">
-        {item.name}
+       
+      {t(item.name)}
       </DisclosureButton>
     </Link>
   ))}

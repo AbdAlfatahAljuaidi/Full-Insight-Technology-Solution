@@ -63,7 +63,7 @@ const About = () => {
           </p>
           <Link to={'/Contact'}>
           <button className="bg-[#0078B8] text-white px-8 py-3 rounded-full text-lg hover:bg-[#286280] transition-all duration-300">
-           { t('Get in Touch')}
+           {t('Get In Touch')}
           </button>
           </Link>
         </div>

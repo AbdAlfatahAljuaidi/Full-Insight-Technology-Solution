@@ -1,10 +1,13 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-const Blog = () => {
+
+const Blog = ({changeLanguage }) => {
+  const { t, i18n } = useTranslation();
   return (
     <section className="pt-28 pb-16 px-4">
       <h1 className="text-center text-2xl sm:text-3xl font-bold mb-8 text-[#0078B8]">
-        Stay Updated with Our Partners' Tweets
+      {t('Stay_Updated_with_Our_Partners_Tweets')}
       </h1>
 
       {/* Grid Container for Responsiveness */}

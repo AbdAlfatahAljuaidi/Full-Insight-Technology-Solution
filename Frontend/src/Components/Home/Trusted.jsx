@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import image1 from '../../Logo/Aik.png';
 import image2 from '../../Logo/Almunif.png';
 import image3 from '../../Logo/Alwan.png';
@@ -26,6 +26,8 @@ import image24 from '../../Logo/Telecom.png';
 import image25 from '../../Logo/TV.png';
 import image26 from '../../Logo/Winds.png';
 
+import { useTranslation } from 'react-i18next';
+
 
 const Trusted = () => {
   // قائمة الصور
@@ -38,16 +40,20 @@ const Trusted = () => {
     image26
   ];
   
+  const { t, i18n } = useTranslation();
+
+ 
+
 
   return (
     <div className="mt-28 text-center bg-gradient-to-br from-blue-50 to-white py-20">
       <div className="container mx-auto px-4">
         {/* العنوان الرئيسي */}
         <h1 className="text-5xl font-bold mb-4 text-gray-900 font-sans">  
-  Some of the Companies We've Worked With  
+        {t('Some_Companies_Weve_Worked_With')} 
 </h1>
         <h3 className="text-xl mb-12 text-gray-600 font-light">
-          Join our growing list of satisfied customers
+        {t('Join_Our_Growing_List_Of_Satisfied_Customers')}
         </h3>
 
         {/* شريط عرض الصور */}
