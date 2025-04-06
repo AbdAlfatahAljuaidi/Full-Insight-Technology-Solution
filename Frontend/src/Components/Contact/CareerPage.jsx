@@ -10,7 +10,7 @@ const CareerPage = () => {
     lastName: '',
     email: '',
     phone: '',
-    resume: null, // حقل رفع السيرة الذاتية
+    file: null, // حقل رفع السيرة الذاتية
     message: '',
   });
 
@@ -27,12 +27,12 @@ const CareerPage = () => {
   const handleFileChange = (e) => {
     setFormData((prevState) => ({
       ...prevState,
-      resume: e.target.files[0],
+      file: e.target.files[0],
     }));
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    
     setLoading(true);
 
     try {
@@ -42,13 +42,20 @@ const CareerPage = () => {
       formDataToSend.append('email', formData.email);
       formDataToSend.append('phone', formData.phone);
       formDataToSend.append('message', formData.message);
-      if (formData.resume) {
-        formDataToSend.append('resume', formData.resume);
+      if (formData.file) {
+        formDataToSend.append('file', formData.file);
       }
 
-      const response = await axios.post(`${apiUrl}/submit-career-form`, formDataToSend, {
+
+      console.log(formData.firstName);
+      
+
+      const response = await axios.post(`${apiUrl}/submit-Resume`, formDataToSend, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
+
+      console.log("hello");
+      
 
       if (response.status === 200) {
         setFormData({
@@ -56,7 +63,7 @@ const CareerPage = () => {
           lastName: '',
           email: '',
           phone: '',
-          resume: null,
+          file: null,
           message: '',
         });
         toast.success("Your application has been submitted successfully.");
@@ -119,7 +126,7 @@ const CareerPage = () => {
           />
           <input
             type="file"
-            name="resume"
+            name="file"
             onChange={handleFileChange}
             className="border border-gray-300 p-4 w-full rounded-lg bg-gray-100 focus:outline-none transition-all duration-300"
             required
