@@ -4,7 +4,10 @@ import { toast } from 'react-toastify';
 const apiUrl = import.meta.env.VITE_REACT_APP_BACKEND_BASEURL;
 import { useTranslation } from 'react-i18next';
 
+
+
 const CareerPage = () => {
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -14,7 +17,7 @@ const CareerPage = () => {
     message: '',
   });
 
-  const [loading, setLoading] = useState(false);
+   const [loading, setLoading] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -24,56 +27,58 @@ const CareerPage = () => {
     }));
   };
 
-  const handleFileChange = (e) => {
-    setFormData((prevState) => ({
-      ...prevState,
-      file: e.target.files[0],
-    }));
-  };
+    //هاد الكود بياخد البيانات مع ملف السيرة الداتية و ببعتها ايميل 
 
-  const handleSubmit = async (e) => {
+//   const handleFileChange = (e) => {
+//     setFormData((prevState) => ({
+//       ...prevState,
+//       file: e.target.files[0],
+//     }));
+//   };
+
+//   const handleSubmit = async (e) => {
     
-    setLoading(true);
+//     setLoading(true);
 
-    try {
-      const formDataToSend = new FormData();
-      formDataToSend.append('firstName', formData.firstName);
-      formDataToSend.append('lastName', formData.lastName);
-      formDataToSend.append('email', formData.email);
-      formDataToSend.append('phone', formData.phone);
-      formDataToSend.append('message', formData.message);
-      if (formData.file) {
-        formDataToSend.append('file', formData.file);
-      }
+//     try {
+//       const formDataToSend = new FormData();
+//       formDataToSend.append('firstName', formData.firstName);
+//       formDataToSend.append('lastName', formData.lastName);
+//       formDataToSend.append('email', formData.email);
+//       formDataToSend.append('phone', formData.phone);
+//       formDataToSend.append('message', formData.message);
+//       if (formData.file) {
+//         formDataToSend.append('file', formData.file);
+//       }
 
 
-      console.log(formData.firstName);
+//       console.log(formData.firstName);
       
 
-      const response = await axios.post(`${apiUrl}/submit-Resume`, formDataToSend, {
-        headers: { 'Content-Type': 'multipart/form-data' },
-      });
+//       const response = await axios.post(`${apiUrl}/submit-Resume`, formDataToSend, {
+//         headers: { 'Content-Type': 'multipart/form-data' },
+//       });
 
-      console.log("hello");
+//       console.log("hello");
       
 
-      if (response.status === 200) {
-        setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          phone: '',
-          file: null,
-          message: '',
-        });
-        toast.success("Your application has been submitted successfully.");
-      }
-    } catch (error) {
-      toast.error(error.response?.data?.message || "An error occurred. Please try again.");
-    } finally {
-      setLoading(false);
-    }
-  };
+//       if (response.status === 200) {
+//         setFormData({
+//           firstName: '',
+//           lastName: '',
+//           email: '',
+//           phone: '',
+//           file: null,
+//           message: '',
+//         });
+//         toast.success("Your application has been submitted successfully.");
+//       }
+//     } catch (error) {
+//       toast.error(error.response?.data?.message || "An error occurred. Please try again.");
+//     } finally {
+//       setLoading(false);
+//     }
+//   };
 
 
   
@@ -110,8 +115,8 @@ const CareerPage = () => {
           <input
             type="email"
             name="email"
-            value={formData.email}
-            onChange={handleInputChange}
+            // value={formData.email}
+            // onChange={handleInputChange}
             placeholder={t('Email')}
             className="border border-gray-300 p-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0078B8] transition-all duration-300"
             required
@@ -119,28 +124,28 @@ const CareerPage = () => {
           <input
             type="tel"
             name="phone"
-            value={formData.phone}
-            onChange={handleInputChange}
+            // value={formData.phone}
+            // onChange={handleInputChange}
             placeholder={t('Phone')}
             className="border border-gray-300 p-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0078B8] transition-all duration-300"
           />
           <input
             type="file"
             name="file"
-            onChange={handleFileChange}
+            // onChange={handleFileChange}
             className="border border-gray-300 p-4 w-full rounded-lg bg-gray-100 focus:outline-none transition-all duration-300"
             required
           />
           <textarea
             name="message"
-            value={formData.message}
-            onChange={handleInputChange}
+            // value={formData.message}
+            // onChange={handleInputChange}
             placeholder={t('Why_do_you_want_to_join_us')}
             className="border border-gray-300 p-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0078B8] transition-all duration-300 h-40"
           />
           <button
             type="submit"
-            onClick={handleSubmit}
+            // onClick={handleSubmit}
             disabled={loading}
             className="w-full bg-[#0078B8] text-white py-3 rounded-lg hover:bg-[#005f8f] transition ease-in-out duration-300"
           >

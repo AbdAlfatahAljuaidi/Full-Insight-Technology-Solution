@@ -134,20 +134,86 @@ i18n.use(initReactI18next).init({
              "Better customer relationship management": "Better customer relationship management",
 
 
+             
+             "What is Epicor ERP?": "Epicor ERP is an enterprise resource planning (ERP) system designed to help businesses manage operations such as manufacturing, finance, supply chain, and customer management.",
+             "What are the key features of Epicor ERP?": "Customization flexibility, strong support for manufacturing, seamless integration with other systems, advanced reporting and analytics, and user-friendly interface.",
+             "Is Epicor ERP suitable for small and medium-sized businesses?": "Yes, Epicor provides flexible solutions that fit businesses of all sizes, with scalability options based on business needs.",
+             "What languages and databases does Epicor ERP support?": "It primarily supports SQL Server as the database and uses C# and .NET for development.",
+             "Can Epicor ERP integrate with other systems?": "Yes, it can integrate with other systems via APIs or integration tools like Epicor Service Connect.",
+             "What is Microsoft D365 Finance and Operations?": "It is an ERP system from Microsoft that helps manage financial and operational processes, targeting large enterprises.",
+             "What is the difference between D365 Finance and D365 Supply Chain Management?": "D365 Finance focuses on accounting and financial management, while D365 Supply Chain Management focuses on production and supply chain processes.",
+             "Can Microsoft D365 Finance and Operations be customized?": "Yes, it can be customized using Power Apps, Power Automate, and its development language (X++).",
+             "What hosting options are available for D365 Finance and Operations?": "It is cloud-based via Azure, with integration options for on-premise systems.",
+             "Does Microsoft D365 Finance and Operations support financial compliance?": "Yes, it supports compliance with international accounting standards and various tax regulations.",
+             "What is the difference between Microsoft D365 Business Central and D365 Finance and Operations?": "Business Central is designed for small and medium-sized businesses, while Finance and Operations is meant for large and complex enterprises.",
+             "What are the key features of Business Central?": "Financial management, inventory and supply chain management, sales and purchasing, Microsoft 365 integration, and built-in analytics.",
+             "Can Business Central integrate with external applications?": "Yes, it supports integration with Power BI, Power Apps, and Dynamics 365 CRM.",
+             "Does Business Central support customization?": "Yes, it can be customized using Visual Studio Code and AL Language.",
+             "What are the hosting options for Business Central?": "It can be hosted on the cloud via Azure or deployed on-premise based on business needs.",
+             "What is ERP development?": "It involves designing, developing, customizing, and implementing ERP solutions to meet business requirements.",
+             "What skills are needed for ERP development?": "Knowledge of databases (SQL), programming (C#, .NET, X++, JavaScript), data analysis, and business processes.",
+             "What are the best programming languages for ERP development?": "C#, .NET, Java, Python, and customization languages like AL for Business Central.",
+             "Can an open-source ERP be developed?": "Yes, open-source solutions like Odoo and ERPNext can be customized to meet business needs.",
+             "What are the biggest challenges in ERP development?": "Business process complexity, data integration, security, and user-friendliness.",
+             "What is the role of an ERP consultant?": "Analyzing business needs, selecting the right system, overseeing implementation, and training employees.",
+             "What are the key stages of ERP implementation?": "Planning, requirements analysis, configuration and customization, testing, training, and go-live.",
+             "How long does it take to implement an ERP system?": "It depends on the company’s size and complexity but typically takes several months to a year.",
+             "Can data be migrated from an old system to a new ERP?": "Yes, data migration is done using specialized tools to ensure accuracy and integrity.",
+             "What are the main challenges in ERP implementation?": "Resistance to change, high implementation costs, system integration, and adequate training for employees.",
+             "Why do pharmaceutical companies need ERP systems?": "To ensure regulatory compliance, track supply chain operations, optimize production, and manage quality control.",
+             "What features should an ERP system have for the pharmaceutical industry?": "Batch tracking, supply chain management, compliance with quality standards (e.g., FDA, GMP), and detailed reporting.",
+             "Are there ERP systems specialized for the pharmaceutical sector?": "Yes, solutions like SAP for Pharmaceuticals, Epicor Pharma Solutions, and Microsoft D365 cater to the industry’s needs.",
+             "How does ERP help in regulatory compliance for pharmaceuticals?": "By enabling automatic tracking of raw materials, managing quality control, and maintaining accurate production records.",
+             "Can an ERP system integrate with laboratory systems in the pharmaceutical industry?": "Yes, it can be integrated with Laboratory Information Management Systems (LIMS) to ensure accurate quality analysis.",
+
+
+
+             "Still have questions": " Still have questions",
+             "Can’t find the answer you’re looking for? Please chat to our friendly team.": "Can’t find the answer you’re looking for? Please chat to our friendly team .",
 
 
 
 
 
+ "ERP Development is an essential":"ERP Development is an essential aspect of modern business management. ERP systems integrate core business processes such as finance, HR, supply chain, and inventory management into a single cohesive system, improving data visibility and decision-making.",
 
 
+ "Why Choose ERP Development?":"Why Choose ERP Development?",
+ "Streamlined Business Processes":"Streamlined Business Processes",
+ "Unify":"Unify all business operations into a single platform, reducing complexity and inefficiency.",
+
+ "Real-Time Data & Analytics":"Real-Time Data & Analytics",
+
+ "Access up-to-date":"Access up-to-date information and make informed decisions with real-time data analytics.",
+
+ "Improved Collaboration":"Improved Collaboration",
+ "Enhance cross-departmental":"Enhance cross-departmental communication and collaboration through shared data and workflows.",
+
+ "Cost Reduction":"Cost Reduction",
+ "Reduce operational":"Reduce operational costs by automating tasks and optimizing resource allocation.",
+ "Industries Benefiting from ERP Development":"Industries Benefiting from ERP Development",
+"Finance":"Finance",
+"Education":"Education",
+"Benefits of ERP Development":"Benefits of ERP Development",
+"Centralized data management and access":"Centralized data management and access",
+"Improved reporting and business insights":"Improved reporting and business insights",
+
+"Enhanced scalability for business growth":"Enhanced scalability for business growth",
+"Streamlined compliance and regulatory reporting":"Streamlined compliance and regulatory reporting",
+"Increased productivity with automated processes":"Increased productivity with automated processes",
+"ERP Development Process":"ERP Development Process",
+"Business needs assessment and requirement gathering":"Business needs assessment and requirement gathering",
+"ERP system customization and integration":"ERP system customization and integration",
+"Training employees and end-users":"Training employees and end-users",
+"Deployment and post-launch support":"Deployment and post-launch support",
+"Continuous updates and optimization":"Continuous updates and optimization",
+"Data migration and system testing":"Data migration and system testing",
+"Conclusion":"Conclusion",
+"ERP development is an investment":"ERP development is an investment in streamlining business operations and ensuring long-term scalability. By choosing an ERP system, companies can automate workflows, improve decision-making, and stay competitive in an ever-changing market.",
 
 
-
-
-
-
-
+"If you want more information":"If you want more information",
+"ERP Consultation & Implementation: A Complete Guide":"ERP Consultation & Implementation: A Complete Guide",
 
 
 
@@ -299,28 +365,148 @@ i18n.use(initReactI18next).init({
                   "Streamlined supply chain and inventory management": "إدارة سلسلة التوريد والمخزون بسلاسة",
                   "Better customer relationship management": "إدارة علاقات العملاء بشكل أفضل",
 
+                  "What is Epicor ERP?": "إيبيكور ERP هو نظام تخطيط موارد المؤسسات (ERP) مصمم لمساعدة الشركات في إدارة العمليات مثل التصنيع والمالية وسلسلة الإمداد وإدارة العملاء.",
+                  "What are the key features of Epicor ERP?": "مرونة التخصيص، دعم قوي للتصنيع، التكامل السلس مع الأنظمة الأخرى، تقارير وتحليلات متقدمة، وواجهة مستخدم سهلة.",
+                  "Is Epicor ERP suitable for small and medium-sized businesses?": "نعم، يوفر إيبيكور حلول مرنة تناسب الشركات بجميع الأحجام، مع خيارات التوسع بناءً على احتياجات العمل.",
+                  "What languages and databases does Epicor ERP support?": "يدعم بشكل أساسي SQL Server كقاعدة بيانات ويستخدم C# و .NET للتطوير.",
+                  "Can Epicor ERP integrate with other systems?": "نعم، يمكن تكامل إيبيكور مع الأنظمة الأخرى عبر APIs أو أدوات التكامل مثل Epicor Service Connect.",
+                  "What is Microsoft D365 Finance and Operations?": "هو نظام ERP من مايكروسوفت يساعد في إدارة العمليات المالية والتشغيلية، ويستهدف الشركات الكبيرة.",
+                  "What is the difference between D365 Finance and D365 Supply Chain Management?": "D365 Finance يركز على المحاسبة والإدارة المالية، بينما D365 Supply Chain Management يركز على الإنتاج وعمليات سلسلة الإمداد.",
+                  "Can Microsoft D365 Finance and Operations be customized?": "نعم، يمكن تخصيصه باستخدام Power Apps و Power Automate ولغة التطوير الخاصة به (X++).",
+                  "What hosting options are available for D365 Finance and Operations?": "يتم استضافته عبر السحابة من خلال Azure، مع خيارات تكامل للأنظمة المحلية.",
+                  "Does Microsoft D365 Finance and Operations support financial compliance?": "نعم، يدعم الامتثال للمعايير المحاسبية الدولية واللوائح الضريبية المختلفة.",
+                  "What is the difference between Microsoft D365 Business Central and D365 Finance and Operations?": "Business Central مخصص للشركات الصغيرة والمتوسطة، بينما Finance and Operations مخصص للشركات الكبيرة والمعقدة.",
+                  "What are the key features of Business Central?": "إدارة مالية، إدارة المخزون وسلسلة الإمداد، المبيعات والمشتريات، تكامل مع Microsoft 365، وتحليلات مدمجة.",
+                  "Can Business Central integrate with external applications?": "نعم، يدعم التكامل مع Power BI و Power Apps و Dynamics 365 CRM.",
+                  "Does Business Central support customization?": "نعم، يمكن تخصيصه باستخدام Visual Studio Code و AL Language.",
+                  "What are the hosting options for Business Central?": "يمكن استضافته على السحابة عبر Azure أو نشره محليًا حسب احتياجات العمل.",
+                  "What is ERP development?": "يتعلق بتصميم وتطوير وتخصيص وتنفيذ حلول ERP لتلبية احتياجات الأعمال.",
+                  "What skills are needed for ERP development?": "معرفة بقواعد البيانات (SQL)، البرمجة (C#، .NET، X++، JavaScript)، تحليل البيانات، وعمليات الأعمال.",
+                  "What are the best programming languages for ERP development?": "C#، .NET، Java، Python، ولغات التخصيص مثل AL لـ Business Central.",
+                  "Can an open-source ERP be developed?": "نعم، يمكن تخصيص حلول مفتوحة المصدر مثل Odoo و ERPNext لتلبية احتياجات الأعمال.",
+                  "What are the biggest challenges in ERP development?": "تعقيد العمليات التجارية، تكامل البيانات، الأمان، وسهولة الاستخدام.",
+                  "What is the role of an ERP consultant?": "تحليل احتياجات الأعمال، اختيار النظام المناسب، الإشراف على التنفيذ، وتدريب الموظفين.",
+                  "What are the key stages of ERP implementation?": "التخطيط، تحليل المتطلبات، التخصيص والتخصيص، الاختبار، التدريب، وبدء التشغيل.",
+                  "How long does it take to implement an ERP system?": "يعتمد على حجم الشركة وتعقيدها، ولكن عادة ما يستغرق عدة أشهر إلى سنة.",
+                  "Can data be migrated from an old system to a new ERP?": "نعم، يتم نقل البيانات باستخدام أدوات متخصصة لضمان الدقة والسلامة.",
+                  "What are the main challenges in ERP implementation?": "مقاومة التغيير، تكاليف التنفيذ العالية، تكامل النظام، والتدريب الكافي للموظفين.",
+                  "Why do pharmaceutical companies need ERP systems?": "لتنفيذ الامتثال التنظيمي، تتبع عمليات سلسلة الإمداد، تحسين الإنتاج، وإدارة مراقبة الجودة.",
+                  "What features should an ERP system have for the pharmaceutical industry?": "تتبع الدُفعات، إدارة سلسلة الإمداد، الامتثال للمعايير (مثل FDA و GMP)، وتقارير مفصلة.",
+                  "Are there ERP systems specialized for the pharmaceutical sector?": "نعم، حلول مثل SAP للأدوية، Epicor Pharma Solutions، و Microsoft D365 تلبي احتياجات هذه الصناعة.",
+                  "How does ERP help in regulatory compliance for pharmaceuticals?": "من خلال تمكين تتبع المواد الخام تلقائيًا، إدارة مراقبة الجودة، والحفاظ على سجلات الإنتاج الدقيقة.",
+                  "Can an ERP system integrate with laboratory systems in the pharmaceutical industry?": "نعم، يمكن تكامل ERP مع أنظمة إدارة المعلومات المخبرية (LIMS) لضمان دقة التحليل الجودة.",
+
+
+
+
+                  
+                    "Epicor ERP is an enterprise resource planning (ERP) system designed to help businesses manage operations such as manufacturing, finance, supply chain, and customer management.": "Epicor ERP هو نظام تخطيط موارد المؤسسات (ERP) مصمم لمساعدة الشركات على إدارة العمليات مثل التصنيع والتمويل وسلسلة التوريد وإدارة العملاء.",
+                    
+                    "Customization flexibility, strong support for manufacturing, seamless integration with other systems, advanced reporting and analytics, and user-friendly interface.": "مرونة التخصيص، دعم قوي للتصنيع، تكامل سلس مع الأنظمة الأخرى، تقارير وتحليلات متقدمة، وواجهة مستخدم سهلة الاستخدام.",
+                    
+                    "Yes, Epicor provides flexible solutions that fit businesses of all sizes, with scalability options based on business needs.": "نعم، تقدم Epicor حلولًا مرنة تناسب الشركات من جميع الأحجام، مع خيارات قابلة للتطوير بناءً على احتياجات العمل.",
+                    
+                    "It primarily supports SQL Server as the database and uses C# and .NET for development.": "يدعم أساسًا SQL Server كقاعدة بيانات ويستخدم C# و .NET للتطوير.",
+                    
+                    "Yes, it can integrate with other systems via APIs or integration tools like Epicor Service Connect.": "نعم، يمكنه التكامل مع الأنظمة الأخرى عبر APIs أو أدوات التكامل مثل Epicor Service Connect.",
+                    
+                    "It is an ERP system from Microsoft that helps manage financial and operational processes, targeting large enterprises.": "هو نظام ERP من Microsoft يساعد في إدارة العمليات المالية والتشغيلية، ويستهدف الشركات الكبيرة.",
+                    
+                    "D365 Finance focuses on accounting and financial management, while D365 Supply Chain Management focuses on production and supply chain processes.": "يركز D365 Finance على المحاسبة والإدارة المالية، بينما يركز D365 Supply Chain Management على الإنتاج وعمليات سلسلة التوريد.",
+                    
+                    "Yes, it can be customized using Power Apps, Power Automate, and its development language (X++).": "نعم، يمكن تخصيصه باستخدام Power Apps و Power Automate ولغته البرمجية (X++).",
+                    
+                    "It is cloud-based via Azure, with integration options for on-premise systems.": "يتم استضافته على السحابة عبر Azure، مع خيارات تكامل مع الأنظمة المحلية.",
+                    
+                    "Yes, it supports compliance with international accounting standards and various tax regulations.": "نعم، يدعم الامتثال للمعايير المحاسبية الدولية واللوائح الضريبية المختلفة.",
+                    
+                    "Business Central is designed for small and medium-sized businesses, while Finance and Operations is meant for large and complex enterprises.": "تم تصميم Business Central للشركات الصغيرة والمتوسطة، بينما تم تصميم Finance and Operations للشركات الكبيرة والمعقدة.",
+                    
+                    "Financial management, inventory and supply chain management, sales and purchasing, Microsoft 365 integration, and built-in analytics.": "إدارة مالية، إدارة المخزون وسلسلة التوريد، المبيعات والشراء، تكامل مع Microsoft 365، وتحليلات مدمجة.",
+                    
+                    "Yes, it supports integration with Power BI, Power Apps, and Dynamics 365 CRM.": "نعم، يدعم التكامل مع Power BI و Power Apps و Dynamics 365 CRM.",
+                    
+                    "Yes, it can be customized using Visual Studio Code and AL Language.": "نعم، يمكن تخصيصه باستخدام Visual Studio Code و AL Language.",
+                    
+                    "It can be hosted on the cloud via Azure or deployed on-premise based on business needs.": "يمكن استضافته على السحابة عبر Azure أو نشره محليًا بناءً على احتياجات العمل.",
+                    
+                    "It involves designing, developing, customizing, and implementing ERP solutions to meet business requirements.": "يشمل تصميم وتطوير وتخصيص وتنفيذ حلول ERP لتلبية متطلبات العمل.",
+                    
+                    "Knowledge of databases (SQL), programming (C#, .NET, X++, JavaScript), data analysis, and business processes.": "معرفة قواعد البيانات (SQL)، البرمجة (C#، .NET، X++، JavaScript)، تحليل البيانات، وعمليات العمل.",
+                    
+                    "C#, .NET, Java, Python, and customization languages like AL for Business Central.": "C#، .NET، Java، Python، ولغات التخصيص مثل AL لـ Business Central.",
+                    
+                    "Yes, open-source solutions like Odoo and ERPNext can be customized to meet business needs.": "نعم، يمكن تخصيص الحلول مفتوحة المصدر مثل Odoo و ERPNext لتلبية احتياجات العمل.",
+                    
+                    "Business process complexity, data integration, security, and user-friendliness.": "تعقيد العمليات التجارية، تكامل البيانات، الأمان، وسهولة الاستخدام.",
+                    
+                    "Analyzing business needs, selecting the right system, overseeing implementation, and training employees.": "تحليل احتياجات العمل، اختيار النظام الصحيح، الإشراف على التنفيذ، وتدريب الموظفين.",
+                    
+                    "Planning, requirements analysis, configuration and customization, testing, training, and go-live.": "التخطيط، تحليل المتطلبات، التكوين والتخصيص، الاختبار، التدريب، والانتقال إلى الإنتاج.",
+                    
+                    "It depends on the company’s size and complexity but typically takes several months to a year.": "يعتمد على حجم وتعقيد الشركة، ولكنه عادة ما يستغرق عدة أشهر إلى سنة.",
+                    
+                    "Yes, data migration is done using specialized tools to ensure accuracy and integrity.": "نعم، يتم ترحيل البيانات باستخدام أدوات متخصصة لضمان الدقة والسلامة.",
+                    
+                    "Resistance to change, high implementation costs, system integration, and adequate training for employees.": "المقاومة للتغيير، التكاليف العالية للتنفيذ، تكامل النظام، والتدريب المناسب للموظفين.",
+                    
+                    "To ensure regulatory compliance, track supply chain operations, optimize production, and manage quality control.": "لضمان الامتثال التنظيمي، تتبع عمليات سلسلة التوريد، تحسين الإنتاج، وإدارة التحكم في الجودة.",
+                    
+                    "Batch tracking, supply chain management, compliance with quality standards (e.g., FDA, GMP), and detailed reporting.": "تتبع الدُفعات، إدارة سلسلة التوريد، الامتثال للمعايير الجودة (مثل FDA و GMP)، وتقارير مفصلة.",
+                    
+                    "Yes, solutions like SAP for Pharmaceuticals, Epicor Pharma Solutions, and Microsoft D365 cater to the industry’s needs.": "نعم، الحلول مثل SAP للصناعات الدوائية، Epicor Pharma Solutions، و Microsoft D365 تلبي احتياجات الصناعة.",
+                    
+                    "By enabling automatic tracking of raw materials, managing quality control, and maintaining accurate production records.": "من خلال تمكين تتبع المواد الخام تلقائيًا، وإدارة التحكم في الجودة، والحفاظ على سجلات الإنتاج الدقيقة.",
+                    
+                    "Yes, it can be integrated with Laboratory Information Management Systems (LIMS) to ensure accurate quality analysis.": "نعم، يمكن دمجه مع أنظمة إدارة المعلومات المختبرية (LIMS) لضمان تحليل الجودة بشكل دقيق.",
+                  
+                  
 
 
 
 
 
 
+                    "Still have questions": "هل لديك أسئلة أخرى؟",
+                    "Can’t find the answer you’re looking for? Please chat to our friendly team.": "لم تجد الإجابة التي تبحث عنها؟ يمكنك الدردشة مع فريقنا الودود.",
+                 
 
+ "ERP Development is an essential": "تطوير أنظمة ERP هو جانب أساسي من إدارة الأعمال الحديثة. تعمل أنظمة ERP على دمج العمليات الأساسية للأعمال مثل المالية، الموارد البشرية، سلسلة التوريد، وإدارة المخزون في نظام واحد مترابط، مما يحسن رؤية البيانات واتخاذ القرارات.",
 
+ "Why Choose ERP Development?":"لماذا تختار تطوير تخطيط موارد المؤسسات (ERP)؟",
+ "Streamlined Business Processes":"عمليات الأعمال المبسطة",
+ "Unify":"توحيد كافة العمليات التجارية في منصة واحدة، مما يقلل من التعقيد وانعدام الكفاءة.",
 
+ "Real-Time Data & Analytics":"البيانات والتحليلات في الوقت الفعلي",
+ "Access up-to-date":"احصل على معلومات محدثة واتخذ قرارات مستنيرة باستخدام تحليلات البيانات في الوقت الفعلي.",
 
+ "Improved Collaboration":"تحسين التعاون",
 
+ "Enhance cross-departmental":"تعزيز التواصل والتعاون بين الإدارات من خلال البيانات المشتركة وسير العمل.",
+ "Cost Reduction":"تخفيض التكلفة",
 
+ "Reduce operational":"تقليل التكاليف التشغيلية عن طريق أتمتة المهام وتحسين تخصيص الموارد.",
+ "Industries Benefiting from ERP Development":"الصناعات المستفيدة من تطوير تخطيط موارد المؤسسات",
+"Finance":"المالية",
+"Education":"التعليم",
+"Benefits of ERP Development":"فوائد تطوير تخطيط موارد المؤسسات",
+"Centralized data management and access":"إدارة البيانات والوصول إليها مركزيًا",
+"Improved reporting and business insights":"تحسين التقارير ورؤى الأعمال",
+"Enhanced scalability for business growth":"تعزيز قابلية التوسع لنمو الأعمال",
 
-
-
-
-
-
-
-
-
-
+"Streamlined compliance and regulatory reporting":"تبسيط الامتثال والتقارير التنظيمية",
+"Increased productivity with automated processes":"زيادة الإنتاجية مع العمليات الآلية",
+"ERP Development Process":"عملية تطوير تخطيط موارد المؤسسات",
+"Business needs assessment and requirement gathering":"تقييم احتياجات الأعمال وجمع المتطلبات",
+"ERP system customization and integration":"تخصيص وتكامل نظام تخطيط موارد المؤسسات (ERP)",
+"Training employees and end-users":"تدريب الموظفين والمستخدمين النهائيين",
+"Deployment and post-launch support":"النشر والدعم بعد الإطلاق",
+"Continuous updates and optimization":"التحديثات والتحسينات المستمرة",
+"Data migration and system testing":"نقل البيانات واختبار النظام",
+"Conclusion":"خاتمة",
+"ERP development is an investment":"يُعد تطوير أنظمة تخطيط موارد المؤسسات (ERP) استثمارًا في تبسيط العمليات التجارية وضمان قابلية التوسع على المدى الطويل. باختيار نظام تخطيط موارد المؤسسات (ERP)، يُمكن للشركات أتمتة سير العمل، وتحسين عملية اتخاذ القرارات، والحفاظ على قدرتها التنافسية في سوق دائم التغير.",
+"If you want more information":"إذا كنت تريد المزيد من المعلومات",
+"ERP Consultation & Implementation: A Complete Guide":"استشارة وتنفيذ تخطيط موارد المؤسسات (ERP): دليل كامل",
 
 
 

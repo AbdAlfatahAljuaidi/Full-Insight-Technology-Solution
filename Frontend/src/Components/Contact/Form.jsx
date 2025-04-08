@@ -17,43 +17,43 @@ const Form = () => {
   const [loading, setLoading] = useState(false);  // حالة تحميل البيانات
  
 
-  // دالة لتحديث البيانات المدخلة في النموذج
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
+     //هاد الكود بياخد البيانات مع ملف السيرة الداتية و ببعتها ايميل 
+  // const handleInputChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData((prevState) => ({
+  //     ...prevState,
+  //     [name]: value,
+  //   }));
+  // };
 
-  // دالة لإرسال البيانات إلى الـ Backend باستخدام Axios
-  const handleSubmit = async (e) => {
-    e.preventDefault();  // منع إعادة تحميل الصفحة عند إرسال النموذج
-    setLoading(true);  // تفعيل حالة التحميل
+  // // دالة لإرسال البيانات إلى الـ Backend باستخدام Axios
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();  // منع إعادة تحميل الصفحة عند إرسال النموذج
+  //   setLoading(true);  // تفعيل حالة التحميل
 
-    try {
-      const response = await axios.post(`${apiUrl}/submit-form`, formData);
+  //   try {
+  //     const response = await axios.post(`${apiUrl}/submit-form`, formData);
 
-      if (response.status === 200) {
+  //     if (response.status === 200) {
        
-        setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          phone: '',
-          message: '',
-        });
-      }
+  //       setFormData({
+  //         firstName: '',
+  //         lastName: '',
+  //         email: '',
+  //         phone: '',
+  //         message: '',
+  //       });
+  //     }
 
-      toast.success("The request has been sent successfully.");
+  //     toast.success("The request has been sent successfully.");
       
-    } catch (error) {
+  //   } catch (error) {
     
-      toast.error(error.response.data.message);
-    } finally {
-      setLoading(false);  // إيقاف حالة التحميل
-    }
-  };
+  //     toast.error(error.response.data.message);
+  //   } finally {
+  //     setLoading(false);  // إيقاف حالة التحميل
+  //   }
+  // };
 
   const { t } = useTranslation();
 
@@ -70,8 +70,8 @@ const Form = () => {
             <input
               type="text"
               name="firstName"
-              value={formData.firstName}
-              onChange={handleInputChange}
+              // value={formData.firstName}
+              // onChange={handleInputChange}
               placeholder={t('First Name')}
               className="border border-gray-300 p-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0078B8] transition-all duration-300"
               required
@@ -79,8 +79,8 @@ const Form = () => {
             <input
               type="text"
               name="lastName"
-              value={formData.lastName}
-              onChange={handleInputChange}
+              // value={formData.lastName}
+              // onChange={handleInputChange}
               placeholder={t('Last Name')}
               className="border border-gray-300 p-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0078B8] transition-all duration-300"
               required
@@ -89,8 +89,8 @@ const Form = () => {
           <input
             type="email"
             name="email"
-            value={formData.email}
-            onChange={handleInputChange}
+            // value={formData.email}
+            // onChange={handleInputChange}
             placeholder={t('Email')}
             className="border border-gray-300 p-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0078B8] transition-all duration-300"
             required
@@ -98,15 +98,15 @@ const Form = () => {
           <input
             type="tel"
             name="phone"
-            value={formData.phone}
-            onChange={handleInputChange}
+            // value={formData.phone}
+            // onChange={handleInputChange}
             placeholder={t('Phone Number')}
             className="border border-gray-300 p-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0078B8] transition-all duration-300"
           />
           <textarea
             name="message"
-            value={formData.message}
-            onChange={handleInputChange}
+            // value={formData.message}
+            // onChange={handleInputChange}
             placeholder={t('Your Message')}
             className="border border-gray-300 p-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0078B8] transition-all duration-300 h-40"
             required
@@ -114,7 +114,7 @@ const Form = () => {
         
           <button
             type="submit"
-            onClick={handleSubmit}
+            // onClick={handleSubmit}
             disabled={loading}
             className="w-full bg-[#0078B8] text-white py-3 rounded-lg hover:bg-[#005f8f] transition ease-in-out duration-300"
           >

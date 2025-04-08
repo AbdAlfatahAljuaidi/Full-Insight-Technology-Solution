@@ -4,14 +4,16 @@ import Footer from '../Footer/Footer';
 import Image from '../../assets/shacke.jpg';
 import Process from '../../assets/ERP.png';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
-const ERPConsultationImplementation = () => {
+const ERPConsultationImplementation = ({changeLanguage }) => {
+  const { t, i18n } = useTranslation();
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col">
    
       <div className="container mx-auto px-6 py-12 flex-1">
         <div className="bg-white shadow-lg rounded-2xl p-8 max-w-5xl mx-auto text-gray-800">
-          <h1 className="text-5xl font-bold text-[#0078B8] mb-8 text-center">ERP Consultation & Implementation: A Complete Guide</h1>
+          <h1 className="text-5xl font-bold text-[#0078B8] mb-8 text-center">{t('ERP Consultation & Implementation: A Complete Guide')}</h1>
           <img src={Image} alt="ERP Consultation and Implementation" className="w-full rounded-lg mb-6" />
           
           <p className="text-lg leading-relaxed mb-6">
@@ -67,13 +69,13 @@ const ERPConsultationImplementation = () => {
             <li>Post-implementation support</li>
           </ol>
           
-          <h2 className="text-3xl font-semibold text-[#0078B8]  mt-10 mb-6">Conclusion</h2>
+          <h2 className="text-3xl font-semibold text-[#0078B8]  mt-10 mb-6">{t('Conclusion')}</h2>
           <p className="text-lg leading-relaxed">
             ERP consultation and implementation services provide businesses with the expertise needed to successfully deploy and maintain an ERP system. With the right approach, companies can improve efficiency, reduce costs, and achieve long-term success.
           </p>
          <div className='mt-5'>
-           <span className=''>If you want more information</span> <Link to={'/contact'} ><button className="ml-2 px-4 py-2 bg-[#0078B8] text-white font-semibold rounded-lg hover:bg-[#005F8A] transition duration-300">
-            Get in Touch
+           <span className=''>{t('If you want more information')}</span> <Link to={'/contact'} ><button className="ml-2 px-4 py-2 bg-[#0078B8] text-white font-semibold rounded-lg hover:bg-[#005F8A] transition duration-300">
+            {t('Get In Touch')}
           </button>
           </Link>
            </div>
