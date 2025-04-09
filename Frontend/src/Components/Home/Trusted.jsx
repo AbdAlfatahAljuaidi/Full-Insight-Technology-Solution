@@ -64,7 +64,7 @@ const Trusted = () => {
           <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white to-transparent z-10"></div>
 
           <div className="marquee-container">
-  <div className="flex animate-marquee space-x-8">
+  <div className="flex animate-marquee space-x-8 "dir="ltr">
     {/* تكرار الصور بشكل أكبر */}
     {images.concat(images, images, images).map((image, index) => (
       <div key={index} className="flex-shrink-0">

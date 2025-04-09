@@ -59,7 +59,7 @@ const Nav = ({changeLanguage }) => {
   return (
     <div>
       <header className="bg-white shadow-lg">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-12">
+        <nav className="mx-auto flex w-full items-center justify-between p-6 lg:px-12">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <img alt="Logo" src={logo} className="h-16 w-auto" />
@@ -67,6 +67,7 @@ const Nav = ({changeLanguage }) => {
           </div>
 
           <div className="flex lg:hidden">
+            
             <button
               type="button"
               onClick={() => setMobileMenuOpen(true)}
@@ -156,7 +157,9 @@ const Nav = ({changeLanguage }) => {
     <p className="mt-1 text-gray-600 text-xs">
     {t('ERP_Customization_Services')}
     </p>
+    
   </div>
+  
 </div>
 
                 </div>
@@ -187,11 +190,33 @@ const Nav = ({changeLanguage }) => {
           <a className="block font-semibold text-gray-900 hover:text-hover">{t('Career Page')}</a>
       </div>
         </Link>
+        
     </div>
   </PopoverPanel>
 </Popover>
 
             </a>
+            <div className="flex space-x-2 rtl:space-x-reverse">
+  <button
+    onClick={() => changeLanguage("en")}
+    className={`px-4 py-2 rounded-md border transition 
+      ${i18n.language === 'en' 
+        ? 'bg-[#0078B8] text-white' 
+        : 'bg-white text-[#0078B8] border-[#0078B8] hover:bg-[#0078B8] hover:text-white'}`}
+  >
+    English
+  </button>
+  <button
+    onClick={() => changeLanguage("ar")}
+    className={`px-4 py-2 rounded-md border transition 
+      ${i18n.language === 'ar' 
+        ? 'bg-[#0078B8] text-white' 
+        : 'bg-white text-[#0078B8] border-[#0078B8] hover:bg-[#0078B8] hover:text-white'}`}
+  >
+    العربية
+  </button>
+</div>
+
           </div>
         </nav>
 
@@ -232,7 +257,7 @@ const Nav = ({changeLanguage }) => {
             <div className="pt-6">
             <Disclosure>
                 <DisclosureButton className="flex w-full items-center justify-between py-2 text-lg font-semibold border-b">
-                   {t('Service')}
+                   {t('Contact')}
                   <ChevronDownIcon className="h-5 w-5" />
                 </DisclosureButton>
                 <DisclosurePanel className="mt-2 space-y-2">
@@ -250,17 +275,34 @@ const Nav = ({changeLanguage }) => {
 
               </Disclosure>
            
-              
+              <div className="flex space-x-2 rtl:space-x-reverse mt-4">
+  <button
+    onClick={() => changeLanguage("en")}
+    className={`px-4 py-2 rounded-md border transition 
+      ${i18n.language === 'en' 
+        ? 'bg-[#0078B8] text-white' 
+        : 'bg-white text-[#0078B8] border-[#0078B8] hover:bg-[#0078B8] hover:text-white'}`}
+  >
+    English
+  </button>
+  <button
+    onClick={() => changeLanguage("ar")}
+    className={`px-4 py-2 rounded-md border transition 
+      ${i18n.language === 'ar' 
+        ? 'bg-[#0078B8] text-white' 
+        : 'bg-white text-[#0078B8] border-[#0078B8] hover:bg-[#0078B8] hover:text-white'}`}
+  >
+    العربية
+  </button>
+</div>
+
             </div>
             
         
           </DialogPanel>
           
         </Dialog>
-         <div>
-        <button onClick={() => changeLanguage("en")}>English</button>
-        <button onClick={() => changeLanguage("ar")}>العربية</button>
-      </div> 
+       
       </header>
     
     </div>

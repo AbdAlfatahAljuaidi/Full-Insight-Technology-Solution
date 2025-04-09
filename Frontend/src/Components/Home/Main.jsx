@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -17,9 +17,12 @@ import { useTranslation } from 'react-i18next';
 const Main = ({changeLanguage }) => {
 
     const { t, i18n } = useTranslation();
+    const isArabic = i18n.language === 'ar'; // تحقق من اللغة الحالية
+    const [isRtl, setIsRtl] = useState(i18n.language === 'ar');
     return (
         <Swiper
             className="w-full"
+            dir={isRtl ? 'rtl' : 'ltr'}
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={0}
             slidesPerView={1}
@@ -32,7 +35,8 @@ const Main = ({changeLanguage }) => {
         >
             {/* Epicor Slide */}
             <SwiperSlide>
-                <div className="relative w-full h-[87vh] text-left" dir="ltr">
+                <div className={`relative w-full h-[87vh] ${isArabic ? 'text-right' : 'text-right'}`}>
+
                     <img className="object-cover w-full h-full" src={Epicor5} alt="Epicor ERP" />
                     <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50">
                         <div className="text-center">
