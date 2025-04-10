@@ -3,6 +3,7 @@ import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import Image from '../../assets/pharam.jpg';
 import Process from '../../assets/pro.jpg';
+import pharma from '../../assets/pharma2.png';
 import { Link } from 'react-router-dom';
 
 const ERPPharmaIndustries = () => {
@@ -12,7 +13,7 @@ const ERPPharmaIndustries = () => {
       <div className="container mx-auto px-6 py-12 flex-1">
         <div className="bg-white shadow-lg rounded-2xl p-8 max-w-5xl mx-auto text-gray-800">
           <h1 className="text-5xl font-bold text-[#0078B8] mb-8 text-center">ERP for Pharmaceutical Industries</h1>
-          <img src={Image} alt="ERP for Pharmaceutical Industries" className="w-full rounded-lg mb-6" />
+          <img src={pharma} alt="ERP for Pharmaceutical Industries" className="w-full rounded-lg mb-6" />
           
           <p className="text-lg leading-relaxed mb-6">
             ERP solutions for the pharmaceutical industry help streamline operations, ensure compliance with regulatory standards, and enhance efficiency. These systems integrate inventory management, production planning, quality control, and financial management into a single platform.

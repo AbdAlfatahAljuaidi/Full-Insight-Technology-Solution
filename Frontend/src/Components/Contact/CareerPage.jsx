@@ -129,13 +129,39 @@ const CareerPage = () => {
             placeholder={t('Phone')}
             className="border border-gray-300 p-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0078B8] transition-all duration-300"
           />
-          <input
-            type="file"
-            name="file"
-            // onChange={handleFileChange}
-            className="border border-gray-300 p-4 w-full rounded-lg bg-gray-100 focus:outline-none transition-all duration-300"
-            required
+           <input
+            type="Position"
+            name="Position"
+            // value={formData.phone}
+            // onChange={handleInputChange}
+            placeholder="Position"
+            className="border border-gray-300 p-4 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0078B8] transition-all duration-300"
           />
+     <div className="flex items-center space-x-2">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-6 w-6 text-gray-500"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M12 4v16m8-8H4"
+    />
+  </svg>
+  <label htmlFor="file" className="text-gray-700 font-medium">Upload your CV </label>
+</div>
+<input
+  type="file"
+  name="file"
+  id="file"
+  className="border border-gray-300 p-4 w-full rounded-lg bg-gray-100 focus:outline-none transition-all duration-300"
+  required
+/>
+
           <textarea
             name="message"
             // value={formData.message}

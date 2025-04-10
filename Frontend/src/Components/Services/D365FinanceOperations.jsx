@@ -72,7 +72,17 @@ const D365FinanceOperations = () => {
           
           <h2 className="text-3xl font-semibold text-[#0078B8] mt-10 mb-6">Implementation Process</h2>
           <img src={Process} alt="Implementation Process" className="w-full rounded-lg mb-6" />
-          <ol className="list-decimal list-inside text-lg text-gray-700 space-y-3">
+          <iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/MML_ppaZXZk"
+  title="Implementation Process Video"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+  className="rounded-lg"
+></iframe>
+          <ol className="list-decimal list-inside text-lg text-gray-700 space-y-3 mt-7">
             <li>Business assessment and requirement gathering</li>
             <li>Solution customization and configuration</li>
             <li>Data migration and system integration</li>

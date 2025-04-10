@@ -168,35 +168,17 @@ const Nav = ({changeLanguage }) => {
 
             <Link to={'/successstory'}><a className="text-lg font-semibold text-[#0078B8] hover:text-hover">{t('Successful Story')}</a></Link>
             <Link to={'/MostQuestions'}><a className="text-lg font-semibold text-[#0078B8] hover:text-hover"> {t('Most Questions')}</a></Link>
+            <Link to={'/CareerPage'}><a className="text-lg font-semibold text-[#0078B8] hover:text-hover"> Career Page</a></Link>
+            <Link to={'/Contact'}><a className="text-lg font-semibold text-[#0078B8] hover:text-hover"> Contact Us</a></Link>
           </PopoverGroup>
 
           <div className="hidden lg:flex lg:items-center lg:gap-6 ml-8">
             <a href="#" className="text-lg font-semibold flex items-center gap-3  text-white px-4 py-2 rounded-lg  ">
               <PhoneIcon className="h-5 w-5 text-white" /> 
-              <Popover className="relative">
-  <PopoverButton className="flex items-center gap-x-2 text-lg font-semibold text-[#0078B8] hover:text-hover">
-    {t('Contact Us')}
-    <ChevronDownIcon className="h-5 w-5 text-gray-400" />
-  </PopoverButton>
-  <PopoverPanel className="absolute top-full -left-8 z-10 mt-3 w-60 bg-white ring-1 shadow-xl rounded-lg">
-    <div className="p-4 space-y-2">
-        <Link to="/Contact">
-      <div className="flex items-center gap-x-4 p-3 text-sm hover:bg-gray-100 rounded-lg">
-          <a className="block font-semibold text-gray-900 hover:text-hover">{t('Contact')}</a>
-      </div>
-        </Link>
-        <Link to="/CareerPage">
-      <div className="flex items-center gap-x-4 p-3 text-sm hover:bg-gray-100 rounded-lg">
-          <a className="block font-semibold text-gray-900 hover:text-hover">{t('Career Page')}</a>
-      </div>
-        </Link>
-        
-    </div>
-  </PopoverPanel>
-</Popover>
+             
 
             </a>
-            <div className="flex space-x-2 rtl:space-x-reverse">
+            {/* <div className="flex space-x-2 rtl:space-x-reverse">
   <button
     onClick={() => changeLanguage("en")}
     className={`px-4 py-2 rounded-md border transition 
@@ -215,7 +197,7 @@ const Nav = ({changeLanguage }) => {
   >
     العربية
   </button>
-</div>
+</div> */}
 
           </div>
         </nav>
@@ -268,7 +250,7 @@ const Nav = ({changeLanguage }) => {
               </Link>
               <Link to={'/CareerPage'}>
                 <h1 className="block text-lg font-semibold flex items-center    py-2 rounded-lg  ">
-                  <PhoneIcon className="h-5 w-5 text-white" />{t('Career Page')}
+                  <PhoneIcon className="h-5 w-5 text-white" />Career
                 </h1>
               </Link>
 </DisclosurePanel>

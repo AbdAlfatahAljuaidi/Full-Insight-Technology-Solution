@@ -59,39 +59,9 @@ const SuccessStory = () => {
 
             </div>
 
-            <div className="bg-[#f1f1f1] p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-              <div className="flex items-center space-x-4 mb-4">
-                <FaCheckCircle className="text-2xl text-[#0078B8]" />
-                <h3 className="text-xl font-semibold">Client B - Streamlined Processes Company</h3>
-              </div>
-              <p className="text-gray-700 mb-4">
-              We developed an ERP system for the pharmaceutical company to improve efficiency and streamline key operations like inventory, sales, and finance, enabling better decision-making and business growth.
+          
 
-              </p>
-              <button
-                className="bg-[#0078B8] text-white px-4 py-2 rounded-lg hover:bg-[#005f7f] transition-all duration-200"
-             
-              >
-                Learn More
-              </button>
-            </div>
-
-            <div className="bg-[#f1f1f1] p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-              <div className="flex items-center space-x-4 mb-4">
-                <FaCheckCircle className="text-2xl text-[#0078B8]" />
-                <h3 className="text-xl font-semibold">Client C - Scalable Solutions Company</h3>
-              </div>
-              <p className="text-gray-700 mb-4">
-              We developed an ERP system for the pharmaceutical company to improve efficiency and streamline key operations like inventory, sales, and finance, enabling better decision-making and business growth.
-
-              </p>
-              <button
-                className="bg-[#0078B8] text-white px-4 py-2 rounded-lg hover:bg-[#005f7f] transition-all duration-200"
-               
-              >
-                Learn More
-              </button>
-            </div>
+           
           </div>
 
           {/* عرض النص المتغير */}
