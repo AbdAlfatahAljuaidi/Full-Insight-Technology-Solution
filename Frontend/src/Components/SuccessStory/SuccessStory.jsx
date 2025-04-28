@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import { FaCheckCircle } from 'react-icons/fa';
@@ -10,6 +10,11 @@ import { useTranslation } from 'react-i18next';
 
 const SuccessStory = () => {
   const { t } = useTranslation();
+
+
+  useEffect(() => {
+window.scrollTo(0,0)
+  },[])
  
 
   return (
@@ -20,7 +25,7 @@ const SuccessStory = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-6 text-[#0078B8]">
            {t('Client Success Stories')}
           </h1>
-          <img src={image} alt="" className="w-full h-[80vh] " />
+          <img src={image} alt="" className="w-full md:h-[80vh] h-[40vh] " />
           
           {/* النص على شكل نقاط */}
           <div className="my-10">
@@ -37,9 +42,9 @@ const SuccessStory = () => {
           {/* Success Story Cards */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-[#f1f1f1] p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300">
-              <div className="flex items-center space-x-4 mb-4">
+              <div className="md:flex items-center space-x-4 mb-4">
                 <img src={PPI} className="w-28 mx-3 " />
-                <h3 className="text-xl font-semibold">{t('Pharma Pharmaceutical Industries')}
+                <h3 className="text-xl font-semibold md:mt-0 mt-2">{t('Pharma Pharmaceutical Industries')}
                 </h3>
               </div>
               <p className="text-gray-700 mb-4">

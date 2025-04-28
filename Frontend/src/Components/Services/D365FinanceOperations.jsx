@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import Image from '../../assets/Micro.png';
@@ -6,6 +6,9 @@ import Process from '../../assets/Microsoft_Dynamics365_blog-1170x617.jpg';
 import { Link } from 'react-router-dom';
 
 const D365FinanceOperations = () => {
+    useEffect(() => {
+  window.scrollTo(0,0)
+    },[])
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col">
     

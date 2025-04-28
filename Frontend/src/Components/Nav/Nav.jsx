@@ -39,6 +39,9 @@ import epicor from '../../assets/epicor-logo.svg'
 import md3 from '../../assets/icons8-medicine-48.png'
 import md4 from '../../assets/icons8-consultation-48.png'
 import md5 from '../../assets/icons8-development-48.png'
+import md6 from '../../assets/md6.jpeg'
+import md7 from '../../assets/md7.jpeg'
+import md8 from '../../assets/md8.jpeg'
 
 
 // تعديل الخيارات المتعلقة بـ Service
@@ -61,9 +64,9 @@ const Nav = ({changeLanguage }) => {
       <header className="bg-white shadow-lg">
         <nav className="mx-auto flex w-full items-center justify-between p-6 lg:px-12">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link to={"/"} className="-m-1.5 p-1.5">
               <img alt="Logo" src={logo} className="h-16 w-auto" />
-            </a>
+              </Link>
           </div>
 
           <div className="flex lg:hidden">
@@ -79,7 +82,13 @@ const Nav = ({changeLanguage }) => {
 
           <PopoverGroup className="hidden lg:flex lg:gap-x-12">
             <Link to={'/'}><a className="text-lg font-semibold text-[#0078B8] hover:text-hover">{t('Home')}</a></Link>
-            <Link to={'/about'}> <a className="text-lg font-semibold text-[#0078B8] hover:text-hover">{t('About')}</a></Link>
+            <Link 
+  to="/about"
+  onClick={() => setMobileMenuOpen(false)}
+  className="text-lg font-semibold text-[#0078B8] hover:text-hover"
+>
+  {t('About')}
+</Link>
 
             <Popover className="relative">
               <PopoverButton className="flex items-center gap-x-2 text-lg font-semibold text-[#0078B8] hover:text-hover">
@@ -125,7 +134,7 @@ const Nav = ({changeLanguage }) => {
 </div>
 
 <div className="flex items-center gap-x-4 p-3 text-sm hover:bg-gray-100 rounded-lg">
-  <img src={md3} className="h-20 w-[370px] text-[#0078B8]" />
+  <img src={md6} className="h-20 w-[370px] text-[#0078B8]" />
   <div>
     <Link to="/ERPPharmaIndustries">
       <a className="block font-semibold text-gray-900 hover:text-hover"> {t('ERP_for_Pharmaceutical_Industries')}</a>
@@ -137,7 +146,7 @@ const Nav = ({changeLanguage }) => {
 </div>
 
 <div className="flex items-center gap-x-4 p-3 text-sm hover:bg-gray-100 rounded-lg">
-<img src={md4} className="h-32 w-[110px] text-[#0078B8]" />
+<img src={md7} className="h-32 w-[110px] text-[#0078B8]" />
   <div>
     <Link to="/ERPConsultationImplementation">
       <a className="block font-semibold text-gray-900 hover:text-hover">{t('ERP_Consultation_and_Implementation')}</a>
@@ -149,7 +158,7 @@ const Nav = ({changeLanguage }) => {
 </div>
 
 <div className="flex items-center gap-x-4 p-3 text-sm hover:bg-gray-100 rounded-lg">
-<img src={md5} className="h-20 w-[240px] text-[#0078B8]" />
+<img src={md8} className="h-20 w-[240px] text-[#0078B8]" />
   <div>
     <Link to="/ERPDevelopment">
       <a className="block font-semibold text-gray-900 hover:text-hover"> {t('ERP Development')}</a>
@@ -202,12 +211,13 @@ const Nav = ({changeLanguage }) => {
           </div>
         </nav>
 
-        <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
-          <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full bg-white px-6 py-6 sm:max-w-sm shadow-lg">
+        <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden ">
+        <DialogPanel className="absolute inset-y-0 right-0 z-10 w-full bg-white px-6 py-6 sm:max-w-sm shadow-lg top-0">
+
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
+              <Link to={"/"} className="-m-1.5 p-1.5">
                 <img alt="Logo" src={logo} className="h-16 w-auto" />
-              </a>
+              </Link>
               <button type="button" onClick={() => setMobileMenuOpen(false)} className="-m-2.5 p-2.5">
                 <XMarkIcon className="h-6 w-6" />
               </button>

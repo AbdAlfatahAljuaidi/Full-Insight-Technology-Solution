@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import Image from '../../assets/epicor_cover.jpeg'
@@ -6,6 +6,9 @@ import Process from '../../assets/ERP.png'
 import { Link } from 'react-router-dom';
 
 const Epicor = () => {
+    useEffect(() => {
+  window.scrollTo(0,0)
+    },[])
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col">
     

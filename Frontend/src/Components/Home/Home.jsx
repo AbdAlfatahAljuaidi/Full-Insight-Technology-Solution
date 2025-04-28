@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Main from './Main'
 import About from './About'
 import Process from './Process'
@@ -9,6 +9,9 @@ import Blog from './Blog'
 import Map from './Map'
 
 const Home = () => {
+    useEffect(() => {
+  window.scrollTo(0,0)
+    },[])
   return (
     <div>
      

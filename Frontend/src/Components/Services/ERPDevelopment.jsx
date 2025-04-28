@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Footer from '../Footer/Footer';
 import Image from '../../assets/erpsolution.webp'; // يمكنك استبدالها بالصورة المناسبة
 import Process from '../../assets/ERPP.jpg'; // يمكنك استبدالها بالصورة المناسبة
@@ -8,6 +8,9 @@ import { useTranslation } from 'react-i18next';
 const ERPDevelopment = ({changeLanguage }) => {
   
   const { t, i18n } = useTranslation();
+    useEffect(() => {
+  window.scrollTo(0,0)
+    },[])
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col">
  

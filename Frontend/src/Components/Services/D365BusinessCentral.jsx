@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import Image from '../../assets/Image 1 .jpeg';
@@ -7,6 +7,9 @@ import Central from '../../assets/Central.png';
 import { Link } from 'react-router-dom';
 
 const D365BusinessCentral = () => {
+    useEffect(() => {
+  window.scrollTo(0,0)
+    },[])
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col">
    

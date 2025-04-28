@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import Image from '../../assets/shacke.jpg';
@@ -8,6 +8,9 @@ import { useTranslation } from 'react-i18next';
 
 const ERPConsultationImplementation = ({changeLanguage }) => {
   const { t, i18n } = useTranslation();
+    useEffect(() => {
+  window.scrollTo(0,0)
+    },[])
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col">
    

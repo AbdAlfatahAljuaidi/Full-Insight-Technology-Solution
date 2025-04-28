@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import Image from '../../assets/pharam.jpg';
@@ -7,6 +7,9 @@ import pharma from '../../assets/pharma2.png';
 import { Link } from 'react-router-dom';
 
 const ERPPharmaIndustries = () => {
+    useEffect(() => {
+  window.scrollTo(0,0)
+    },[])
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col">
     

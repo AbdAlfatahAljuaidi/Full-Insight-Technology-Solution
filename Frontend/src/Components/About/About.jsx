@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import { FaUsers, FaChartLine, FaCog } from 'react-icons/fa';
@@ -8,6 +8,9 @@ import { useTranslation } from 'react-i18next';
 const About = () => {
 
   const { t } = useTranslation();
+    useEffect(() => {
+  window.scrollTo(0,0)
+    },[])
   return (
     <div className=" min-h-screen flex flex-col text-white">
      

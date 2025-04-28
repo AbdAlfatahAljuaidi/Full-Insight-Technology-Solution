@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 const apiUrl = import.meta.env.VITE_REACT_APP_BACKEND_BASEURL;
@@ -15,6 +15,10 @@ const Form = () => {
   });
 
   const [loading, setLoading] = useState(false);  // حالة تحميل البيانات
+
+    useEffect(() => {
+  window.scrollTo(0,0)
+    },[])
  
 
      //هاد الكود بياخد البيانات مع ملف السيرة الداتية و ببعتها ايميل 

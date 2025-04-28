@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const MostQuestions = ({ changeLanguage }) => {
   const [openAnswer, setOpenAnswer] = useState(null);
   const { t, i18n } = useTranslation();
-  
+    useEffect(() => {
+  window.scrollTo(0,0)
+    },[])
  
   const questions = [
 

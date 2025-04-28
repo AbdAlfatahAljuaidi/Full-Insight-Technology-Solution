@@ -19,10 +19,10 @@ const Footer = () => {
             <p className="text-gray-400">
             {t('fits explanation')}
             </p>
-            <div className='flex mt-3 '>
+            <div className=' md:flex mt-3 '>
 
             <img src={alhaq} alt="" className='mt-5 w-40'  />
-            <img src={fits} alt="" className='mt-5 w-40 mx-3'  />
+            <img src={fits} alt="" className='mt-5 w-40 md:mx-3'  />
             </div>
           </div>
 

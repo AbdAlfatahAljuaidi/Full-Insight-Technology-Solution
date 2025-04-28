@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaLightbulb, FaGlobe, FaMobileAlt, FaDatabase } from 'react-icons/fa';
 import { SiWebflow } from 'react-icons/si';
 import { Link } from 'react-router-dom';
 
 import md1 from '../../assets/md1.png'
 import md2 from '../../assets/md2.png'
+import md6 from '../../assets/md6.jpeg'
+import md7 from '../../assets/md7.jpeg'
+import md8 from '../../assets/md8.jpeg'
 import epicor from '../../assets/epicor-logo.svg'
 import { useTranslation } from 'react-i18next';
 
@@ -29,6 +32,9 @@ import { IoServer } from 'react-icons/io5';
 
 const About = ({changeLanguage }) => {
     const { t, i18n } = useTranslation();
+      useEffect(() => {
+    window.scrollTo(0,0)
+      },[])
   return (
     <section className="about py-28  min-h-screen flex justify-center items-center">
       <div className="container px-4 text-center">
@@ -90,7 +96,7 @@ const About = ({changeLanguage }) => {
         <div className="cards flex flex-wrap justify-center gap-8 mt-12">
           <div className="card p-6 bg-white shadow-lg rounded-lg border-r-4 border-transparent w-full sm:w-1/2 md:w-1/3 lg:w-1/4 hover:transform hover:scale-105 transition-all duration-300">
             <div className="icon-container flex justify-center items-center mb-4 transition-transform duration-500 transform hover:rotate-360">
-              <ShieldCheckIcon className="text-xl text-[#0078B8] w-20" />
+            <img src={md6} className="text-4xl text-[#0078B8]  w-[270px]" />
             </div>
             <h1 className="text-xl font-semibold mb-2">{t('ERP_for_Pharmaceutical_Industries')} </h1>
             <h4 className="text-sm mb-4 text-gray-600">
@@ -108,7 +114,7 @@ const About = ({changeLanguage }) => {
 
           <div className="card p-6 bg-white shadow-lg rounded-lg border-r-4 border-transparent w-full sm:w-1/2 md:w-1/3 lg:w-1/4 hover:transform hover:scale-105 transition-all duration-300">
             <div className="icon-container flex justify-center items-center mb-4 transition-transform duration-500 transform hover:rotate-360">
-              <BriefcaseIcon className="text-4xl text-[#0078B8]  w-20" />
+            <img src={md7} className="text-4xl text-[#0078B8]  w-52" />
             </div>
             <h1 className="text-xl font-semibold mb-2">{t('ERP_Consultation_and_Implementation')}</h1>
             <h4 className="text-sm mb-4 text-gray-600">
@@ -124,7 +130,7 @@ const About = ({changeLanguage }) => {
 
           <div className="card p-6 bg-white shadow-lg rounded-lg border-r-4 border-transparent w-full sm:w-1/2 md:w-1/3 lg:w-1/4 hover:transform hover:scale-105 transition-all duration-300">
             <div className="icon-container flex justify-center items-center mb-4 transition-transform duration-500 transform hover:rotate-360">
-              <GlobeAltIcon className="text-4xl text-[#0078B8]  w-20" />
+            <img src={md8} className="text-4xl text-[#0078B8]  w-40" />
             </div>
             <h1 className="text-xl font-semibold mb-2">{t('ERP Development')}
             </h1>
