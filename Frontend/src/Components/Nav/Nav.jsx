@@ -267,7 +267,7 @@ const Nav = ({changeLanguage }) => {
 
               </Disclosure>
            
-              <div className="flex space-x-2 rtl:space-x-reverse mt-4">
+              {/* <div className="flex space-x-2 rtl:space-x-reverse mt-4">
   <button
     onClick={() => changeLanguage("en")}
     className={`px-4 py-2 rounded-md border transition 
@@ -286,7 +286,7 @@ const Nav = ({changeLanguage }) => {
   >
     العربية
   </button>
-</div>
+</div> */}
 
             </div>
             
